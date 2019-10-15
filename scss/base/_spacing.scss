@@ -1,0 +1,126 @@
+/*
+    Define margin and padding for some HTML elements
+*/
+
+
+
+
+html, body {}
+    html {}
+    body {}
+
+
+
+
+//  Links
+a, a:hover {}
+    a:visited {}
+    a:active {}
+
+button, button:visited {}
+    button:hover {}
+    button:active {}
+
+a[href$=".pdf"] {}  //  PDF Link
+    a[href$=".pdf"]::after {}  //  PDF Link
+
+a[href$=".doc"], a[href$=".docx"] {}  // Microsoft Word document
+    a[href$=".doc"]::after, a[href$=".docx"]::after {}
+    a[href$=".docx"]::after {}
+
+a[href$=".mp3"] {}  //  MP3 file
+    a[href$=".mp3"]::after {}
+
+a[href$=".mp4"] {}  //  MP4 file
+    a[href$=".mp4"]::after {}
+
+a[href$=".zip"] {}  //  ZIP File
+    a[href$=".zip"]::after {}
+
+
+
+
+//  Headings
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    
+}
+    h1 {}
+    h2 {}
+    h3 {}
+    h4 {}
+    h5 {}
+    h6 {}
+
+
+
+
+//  Block level elements
+header {}
+nav {}
+main {}
+section {}
+article {}
+aside {}
+footer {}
+
+
+
+
+//  Paragraphs
+p {}
+pre {}
+
+
+
+
+//  Details
+details {}
+    details summary {}
+
+
+
+
+//  Lists
+dl {}
+    dl dt {}
+    dl dd {}
+
+ol {}
+    ol li {}
+
+ul {}
+    ul li {}
+
+
+
+
+//  Quotations
+abbr, acronym {}
+address {}
+bdo {}
+blockquote {}
+caption {}
+cite {}
+q {}
+
+
+
+
+//  Images
+figure {}
+    figure img {}
+    figcaption {}
+
+
+
+
+//  Form elements
+form {}
+    legend {}
+    label {}
+    input {}
+    select {}
+        optgroup {}
+        option {}
+    textarea {}

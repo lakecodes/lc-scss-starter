@@ -1,0 +1,60 @@
+//  Fallback Fonts
+$serif: "Times New Roman", Times, Georgia, Cambria, "Palatino Linotype", "Book Antiqua", serif;
+$sans-serif: Arial, "Trebuchet MS", Helvetica, Verdana, Geneva, Tahoma, Geneva, "Lucida Grande", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+$monospace: "Courier New", Courier, "Fira Mono", "DejaVu Sans Mono", Menlo, Consolas, "Liberation Mono", Monaco, "Lucida Console", monospace;
+$cursive: Comic Sans MS, Comic Sans, "Brush Script MT", "Brush Script Std", "Lucida Calligraphy", "Lucida Handwriting", "Apple Chancery", cursive;
+$fantasy: Papyrus, Herculanum, Party LET, Curlz MT, Harrington, fantasy;
+$emoji: emoji;
+$math: math;
+$fangsong: fangsong;
+/*
+    Each variable above can be used in the
+    $type variable below.
+*/
+
+
+
+
+// FONT  -------------------------------------------------------------------------------------------------------------
+@mixin font($family, $type, $style, $size, $weight) {
+    
+    @if ($type == 'serif') {
+        $fallback: $serif;
+    }
+    @if ($type == 'sans-serif') {
+        $fallback: $sans-serif;
+    }
+    @if ($type == 'monospace') {
+        $fallback: $monospace;
+    }
+    @if ($type == 'cursive') {
+        $fallback: $cursive;
+    }
+    @if ($type == 'fantasy') {
+        $fallback: $fantasy;
+    }
+    @if ($type == 'emoji') {
+        $fallback: $emoji;
+    }
+    @if ($type == 'math') {
+        $fallback: $math;
+    }
+    @if ($type == 'fangsong') {
+        $fallback: $fangsong;
+    }
+    
+    font-family: $family, $fallback;
+    font-style:  $style;
+    font-size:  $size;
+    font-weight: $weight;
+}
+
+
+
+
+//  Using "@include font"
+/*
+    h1 {
+        @include font("Amador", fantasy, normal, 16px, normal);
+    }
+*/

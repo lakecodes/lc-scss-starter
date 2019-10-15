@@ -1,0 +1,164 @@
+/*
+    Base TYPOGRAPHY for HTML elements
+*/
+
+
+
+
+html, body {}
+    html {}
+    body {}
+
+
+
+
+//  Links
+a, a:hover {}
+    a:visited {}
+    a:active {}
+
+button, button:visited {}
+    button:hover {}
+    button:active {}
+
+a[href^="tel:"] {}
+a[href^="mailto:"] {}
+
+
+a[href^="http://"], a[href^="https://"] {} // fully valid URL, likely external link
+    a[href^="https://"] {}
+
+a[href^="ftp://"] {} // FTP site
+a[href^="ftp://"]::after {content:' (FTP)'; font-size:80%;} // FTP site
+
+a[href="http://google.com"] {}  //  link to specific website
+
+a[href*='youtube']::before {  //  YouTube link
+    font-family: "Font Awesome 5 Free";
+    content: "\f03d";
+    margin-left:4px;
+    font-size: 80%;
+    position: relative;
+    top:-1px;
+}
+
+a[href^="/"], a[href^=".."] {}  // internal relative link
+
+a[href$=".pdf"] {}  //  PDF Link
+    a[href$=".pdf"]::after {content:' (PDF)'; font-size:80%;}  //  PDF Link
+
+a[href$=".doc"], a[href$=".docx"] {}  // Microsoft Word document
+    a[href$=".doc"]::after, a[href$=".docx"]::after {content:' (DOC)'; font-size:80%;}
+    a[href$=".docx"]::after {content:' (DOCX)';}
+
+a[href$=".mp3"] {}  //  MP3 file
+    a[href$=".mp3"]::after {content:' (MP3)'; font-size:80%;}
+
+a[href$=".mp4"] {}  //  MP4 file
+    a[href$=".mp4"]::after {content:' (MP4)'; font-size:80%;}
+
+a[href$=".zip"] {}  //  ZIP File
+    a[href$=".zip"]::after {content:' (ZIP)'; font-size:80%;}
+
+
+
+
+//  Headings
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    
+}
+    h1 {}
+    h2 {}
+    h3 {}
+    h4 {}
+    h5 {}
+    h6 {}
+
+
+
+
+//  Block level elements
+article {}
+aside {}
+main {}
+
+
+
+
+//  Paragraphs
+p {}
+pre {}
+
+
+
+
+//  Details
+details {}
+    details summary {}
+
+
+
+
+//  Lists
+dl {}
+    dl dt {}
+    dl dd {}
+
+ol {}
+    ol li {}
+
+ul {}
+    ul li {}
+
+
+
+
+//  Formatting/Phrase elements
+b, strong {}
+i, em {}
+mark {}
+u {}
+strike {}
+big {}
+small {}
+code {}
+samp {}
+kbd {}
+var {}
+del {}
+ins {}
+sub, sup {}
+    sub {}
+    sup {}
+
+
+
+
+//  Quotations
+abbr, acronym {}
+address {}
+bdo {}
+blockquote {}
+caption {}
+cite {}
+q {}
+
+
+
+
+//  Images
+figcaption {}
+
+
+
+
+//  Form elements
+legend {}
+label {}
+input {}
+select {}
+    optgroup {}
+    option {}
+textarea {}
+

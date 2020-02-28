@@ -1,9 +1,9 @@
 # lc-scss-starter
-SCSS Starter Pack - Just a good jumping off point.
+LC SCSS Starter Pack - *Just a good jumping off point.*
 
 
 ## Verion 0.5.1beta
-Built by [Lake County Board of County Commissioners Office of Communications](https://lakecountyfl.gov/offices/communications/)
+Built by [Lake County Board of County Commissioner's Office of Communications](https://lakecountyfl.gov/offices/communications/)
 
 
 ## Outside Vendors:
@@ -16,13 +16,12 @@ Built by [Lake County Board of County Commissioners Office of Communications](ht
 
 
 ## Changes
-###### v0.5.1beta
-- Changed styles.scss -> lc-scss-starter.scss
-- Updated README.md
+###### v0.5.2beta
+- Revised README.md
 
 
 ###### v0.5beta
-- Added lc-ngui stylesheets for easy deployments into new projects.
+- Added lc-ngui stylesheets for easy deployments into new projects.  *These files are intended for layout/structure only.  Colors are kept to a minimum.*
   - lc-calendar-widget
   - lc-card
   - lc-content-callout
@@ -34,19 +33,19 @@ Built by [Lake County Board of County Commissioners Office of Communications](ht
   - lc-map 
   - lc-nav
   - lc-news
-- Updated README.md
+- Revised README.md
 
 
 ###### v0.4.1beta
-- Updated README.md
+- Revised README.md
 
 
 ###### v0.4beta
-- Updated __vendor-dir.scss file to include Bootstrap 4.4.1
-- Updated __vendor-dir.scss file to include Google Fonts
+- Added Bootstrap 4.4.1 to __vendor-dir.scss
+- Added Google Fonts __vendor-dir.scss
+  - <a href="https://fonts.google.com/specimen/Barlow+Condensed" target="_blank" title="Barlow Condensed">Barlow Condensed</a>
   - <a href="https://material.io/resources/icons/?style=round" target="_blank" title="Material Icons (*Rounded*)">Material Icons (*Rounded*)</a>
   - <a href="https://fonts.google.com/specimen/Roboto" target="_blank" title="Roboto">Roboto</a>
   - <a href="https://fonts.google.com/specimen/Roboto+Condensed" target="_blank" title="Roboto Condensed">Roboto Condensed</a>
-  - <a href="https://fonts.google.com/specimen/Barlow+Condensed" target="_blank" title="Barlow Condensed">Barlow Condensed</a>
 - Removed Font Awesome (*Sorry, folks*)
-- Updated README.md
+- Revised README.md

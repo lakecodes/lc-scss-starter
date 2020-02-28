@@ -4,7 +4,6 @@ e.g., Bootstrap, Bourbon, Fontawesome, Neat, Normalize, etc.
 */
 
 //Import Vendor files
-//@import "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css";
-//@import "fontawesome/scss/fontawesome.scss"; //5.11.2
-//@import "https://necolas.github.io/normalize.css/latest/normalize.css";  //Always latest verion, 8.0.1 as of first use.
+@import url("https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css");
+@import url("https://fonts.googleapis.com/css?family=Barlow+Condensed:400,500,600|Roboto+Condensed:400,700|Roboto:300,400,700,900|Material+Icons+Rounded&display=swap");
 /* Additonal Vendor Tools */

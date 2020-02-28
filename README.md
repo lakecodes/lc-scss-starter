@@ -31,7 +31,7 @@ Built by [Lake County Board of County Commissioners Office of Communications](ht
   - lc-header
   - lc-image
   - lc-link
-  - lc-map
+  - lc-map 
   - lc-nav
   - lc-news
 - Updated README.md

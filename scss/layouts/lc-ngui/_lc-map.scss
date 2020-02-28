@@ -1,0 +1,200 @@
+*, #mapInfoContainer .btn::after {
+    transition: all .2s;
+}
+
+#mapContainer {
+    //position:absolute;
+    position: relative;
+    width: 100%;
+    // border: solid #DDD;
+    // border-width: 1px 0px;
+    background: #EEE center center no-repeat;
+    background-size: cover;
+    overflow:hidden;
+}
+    #mapContainer::after {
+        content:'';
+        display: block;
+        width:100%;
+        height:100%;
+        position: absolute;
+        top:0;
+        right:0;
+        bottom:0;
+        left:0;
+        background:rgba(0,0,0,.05);
+        pointer-events: none;
+    }
+
+#mapBgImage {
+    width:100%;
+    min-height:100%;
+    position: absolute;
+    top:0;
+    left:0;
+    // bottom:0;
+    // right:0;
+    object-fit: none;
+    object-position: 50% 0%;
+}
+#mapRenderContainer {
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#mapInfoContainer {
+    position: relative;
+    background: rgba(59,59,59,.92);
+    /*padding: 30px 40px;*/
+    padding: 20px;
+    /*width: 580px;*/
+    // width: calc(100% - 75px);
+    // max-width: 580px;
+    /*margin: 60px;*/
+    // margin: 15px 15px 100px 60px;
+    margin: 15px;
+    color: #FFF;
+    font-size: 16px;
+    z-index: 5;
+}
+
+#mapInfoContainer h4 {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    color: $blueOnDark;
+}
+
+// #mapInfoContainer .mapInfoLeft,
+// #mapInfoContainer .mapInfoRight {
+//     /*width: calc(50% - 10px);*/
+//     /*float: left;*/
+//     /*margin: 5px;*/
+// }
+
+// #mapInfoContainer .mapInfoLeft {}
+// #mapInfoContainer .mapInfoRight {}
+
+#mapInfoContainer h5 {
+    font-size: 1rem;
+    margin-bottom: 2px;
+    color: $blueOnDark;
+}
+
+#mapInfoContainer address {
+    margin-bottom: 15px;
+}
+    
+
+#mapInfoContainer p {
+    margin-bottom: 30px;
+}
+
+// #mapInfoContainer a, #mapInfoContainer a:visited {
+//     color: #FFF;
+// }
+
+// #mapInfoContainer a:not(.read-more):hover {
+//     color:$blue;
+// }
+
+    // #mapInfoContainer address a:hover {
+    //     color:#FFF;
+    // }
+
+// #mapInfoContainer .mapSocial {}
+
+#mapInfoContainer .mapSocial a, #mapInfoContainer .mapSocial a:visited {
+    padding: 5px;
+    opacity: .8;
+}
+
+#mapInfoContainer .mapSocial a:hover {
+    opacity: 1;
+}
+
+#mapInfoContainer .mapSocial a:nth-of-type(1) {
+    padding-left: 0;
+}
+
+// #mapInfoContainer .mapSocial a img {}
+
+//#mapInfoContainer .btn, #mapInfoContainer .btn:visited {
+//    font-size: 14px;
+//    text-transform: uppercase;
+//    border-bottom: 2px solid #FFF;
+//    border-radius: 0;
+//    padding-left: 0;
+//    padding-right: 0;
+//    margin-top: 20px;
+//    width: 60%;
+//    text-align: left;
+//}
+//
+//#mapInfoContainer .btn:hover {
+//    padding-left: 5px;
+//    color:#FFF;
+//}
+//
+//#mapInfoContainer .btn::after {
+//    display: inline-block;
+//    font-size: 2em;
+//    line-height: 1em;
+//    content: "\00BB";
+//    opacity: 0;
+//    margin-left: 3px;
+//    transform: translateX(0px) translateY(3px);
+//}
+//
+//#mapInfoContainer .btn:hover::after {
+//    opacity: 1;
+//    transform: translateX(15px) translateY(3px);
+//}
+
+
+
+
+@media screen and (min-width:480px){
+    #mapInfoContainer {
+        width: 68vw;
+    }
+}
+
+
+
+
+
+@media screen and (min-width:576px){
+    #mapInfoContainer h4 {font-size: 2rem;}
+    #mapInfoContainer h5 {font-size: 1.2rem;}
+    #mapInfoContainer .mapInfoLeft, #mapInfoContainer .mapInfoRight {
+        // width: calc(50% - 10px);
+        float: left;
+        margin: 5px;
+    }
+        #mapInfoContainer .mapInfoLeft {
+            padding-right:60px;
+        }
+
+    #mapInfoContainer address {margin-bottom: 30px;}
+}
+
+
+
+
+@media screen and (min-width:768px){
+    #mapInfoContainer {/*background: rgba(59,59,59,1);*/ padding: 30px 40px; margin: 60px;}
+}
+
+
+
+
+@media screen and (min-width:992px){
+    #mapInfoContainer {
+        background: rgba(59,59,59,1);
+        width:auto;
+        // max-width: 580px;
+        float:left;
+    }
+}

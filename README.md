@@ -2,7 +2,7 @@
 SCSS Starter Pack - Just a good jumping off point.
 
 
-## Verion 0.4.1beta
+## Verion 0.5beta
 Built by [Lake County Board of County Commissioners Office of Communications](https://lakecountyfl.gov/offices/communications/)
 
 
@@ -16,6 +16,22 @@ Built by [Lake County Board of County Commissioners Office of Communications](ht
 
 
 ## Changes
+###### v0.5beta
+- Added lc-ngui stylesheets for easy deployments into new projects.
+  - lc-calendar-widget
+  - lc-card
+  - lc-content-callout
+  - lc-esri-map
+  - lc-footer
+  - lc-header
+  - lc-image
+  - lc-link
+  - lc-map
+  - lc-nav
+  - lc-news
+- Updated README.md
+
+
 ###### v0.4.1beta
 - Updated README.md
 

@@ -1,0 +1,1248 @@
+#card-container.style-3 {
+    margin-top:15px;
+    margin-bottom:15px;
+}
+    @media screen and (min-width:1600px) {
+        #card-container.style-3 {
+            margin-top:30px;
+            margin-bottom:30px;
+        }
+    }
+
+#card-container.container-fluid.style-2,
+#card-contiainer.container-fluid.style-3 {
+    // border:1px solid #F00;
+    padding:unset;
+}
+    #card-container.container-fluid.style-2 .col,
+    #card-container.container-fluid.style-3 .col {
+        padding:unset;
+    }
+
+.cards {
+    width:100%;
+    // border-top:10px solid #F00;
+}
+
+    .style-2 .cards {
+        // border-top:5px solid #F00;
+    }
+
+    @media screen and (min-width:576px) {
+        .container-fluid.style-3.three .cards {
+            display:flex;
+            flex-direction: row;
+            flex-wrap:nowrap;
+            justify-content:space-between;
+        }
+        .style-3 .cards {
+            margin-bottom:15px;
+        }
+    }
+
+    @media screen and (min-width:768px) {
+        //--  TWO CARDS  --------------------
+        .two .cards {
+            display:flex;
+            justify-content: flex-start;
+            align-content: flex-start;
+        }
+            .container-fluid.two .cards {
+                padding-left:5vw;
+                padding-right:5vw;
+            }
+
+            .container-fluid.style-2.two .cards {
+                padding:unset;
+            }
+
+            .container-fluid.style-3.three .cards {
+                padding:unset;
+            }
+    }
+
+    @media screen and (min-width:992px) {
+        //--  THREE CARDS  --------------------
+        .three:not(.style-3) .cards {
+            // border-top:10px solid #F00;
+            display:flex;
+            justify-content: flex-start;
+            align-content: flex-start;
+        }
+            .container-fluid.three:not(.style-2):not(.style-3) .cards {
+                padding-left:3vw;
+                padding-right:3vw;
+            }
+
+        //--  THREE CARDS (style-2)  --------------------
+        .style-2.three .cards {
+            display:block;
+        }
+        .style-3 .cards {
+            margin-bottom:unset;
+        }
+    }
+
+    @media screen and (min-width:1200px) {
+        // //--  THREE CARDS  --------------------
+        // .container-fluid.three:not(.style-2) .cards {
+        //     padding-left:30px;
+        //     padding-right:30px;
+        // }
+
+        //--  FOUR CARDS  --------------------
+        .four .cards {
+            // border-top:10px solid #F00;
+            display:flex;
+            justify-content: flex-start;
+            align-content: flex-start;
+        }
+            .container-fluid.four:not(.style-2) .cards {
+                padding-left:30px;
+                padding-right:30px;
+            }
+        
+            .style-3 .cards {
+                margin-bottom:7px;
+            }
+    }
+    
+    @media screen and (min-width:1600px) {
+        .container-fluid .cards {
+            padding-left:5vw;
+            padding-right:5vw;
+        }
+            .container-fluid.style-2 .cards {
+                padding:unset;
+            }
+    }
+
+
+
+
+
+    .cards .cards-item {
+        // border-bottom:1px solid #F0F;
+        margin-bottom:3.75rem;
+    }
+        .cards .cards-item:last-of-type {
+            margin-bottom:unset;
+        }
+
+        .style-2 .cards .cards-item {
+            // border-top:5px solid #F0F;
+            // margin-bottom:3.75rem;
+            margin-bottom:unset;
+        }
+            .style-3 .cards .cards-item {
+                margin-bottom:15px;
+                position: relative;
+            }
+                .style-3 .cards .cards-item:last-of-type {
+                    margin-bottom:40px;
+                }
+
+                .style-3 .cards .cards-item:after {
+                    position: absolute;
+                    bottom: 15px;
+                    right: 5px;
+                    font-family: 'Material Icons Round';
+                    font-weight: normal;
+                    font-style: normal;
+                    display: inline-block;
+                    line-height: 0;
+                    text-transform: none;
+                    letter-spacing: normal;
+                    word-wrap: normal;
+                    white-space: nowrap;
+                    direction: ltr;
+                    -webkit-font-smoothing: antialiased;
+                    text-rendering: optimizeLegibility;
+                    -moz-osx-font-smoothing: grayscale;
+                    font-feature-settings: 'liga';
+                    // position: relative;
+                    @include transition(all .1s);
+                    @include opacity(.4);
+                    // padding-left:.25rem;
+                    content:'info';
+                    z-index: 10;
+                    color:#FFF;
+                    font-size:1.5rem;
+                }
+                    .style-3 .cards-item:hover:after {
+                        @include opacity(0);
+                        // @include transition(all .3s);
+                    }
+        
+        @media screen and (min-width:576px) {
+            .container-fluid.style-2.two .cards .cards-item {
+                display:inline-block;
+                width:50%;
+            }
+            .container-fluid.style-2.four .cards .cards-item {
+                display:block;
+                width:50%;
+                float:left;
+            }
+            .style-3 .cards-item:nth-of-type(2) {
+                // border:1px solid #F00;
+                margin-left:15px;
+                margin-right:15px;
+            }
+
+            .style-3 .cards .cards-item,
+            .style-3 .cards .cards-item:last-of-type {
+                margin-bottom:unset;
+            }
+        }
+
+        @media screen and (min-width:768px) {
+            //--  TWO CARDS  --------------------
+            .two .cards .cards-item {
+                // border-top:3px solid #DDD;
+                width:calc(50% - 15px);
+                margin-bottom:unset;
+            }
+                .two .cards .cards-item:last-of-type {
+                    margin-left:30px;
+                }
+
+            //--  TWO CARDS (style-2)  --------------------
+            .style-2.two .cards .cards-item,
+            .style-2.four .cards .cards-item {
+                display:inline-block;
+                width:50%;
+                margin:0;
+            }
+                .style-2.four .cards .cards-item {
+                    float:left;
+                }
+
+            .container-fluid.style-2.three .cards .cards-item {
+                display:block;
+                width:33.333333%;
+                float:left;
+            }
+        }
+
+        @media screen and (min-width:992px) {
+            .cards .cards-item {
+                width:100%;
+            }
+
+                //--  THREE CARDS  --------------------
+                .three:not(.style-3) .cards .cards-item {
+                    // border-top:3px solid #00F;
+                    width:calc(33.333333% - 20px);
+                    margin-bottom:unset;
+                }
+                    .three:not(.style-3) .cards .cards-item:nth-of-type(2) {
+                        margin-left:30px;
+                        margin-right:30px;
+                    }
+
+                //--  THREE CARDS  --------------------
+                .style-2.three .cards .cards-item {
+                    display:inline-block;
+                    width:33.333333%;
+                    margin:0;
+                }
+
+                .container-fluid.style-2.four .cards .cards-item {
+                    width:25%;
+                }
+
+                .style-3 .cards-item:nth-of-type(2) {
+                    margin-left:15px;
+                    margin-right:15px;
+                }
+        }
+
+        @media screen and (min-width:1200px) {
+            //--  THREE CARDS  --------------------
+            .four .cards .cards-item {
+                // border-top:3px solid #00F;
+                width:calc(25% - 20px);
+                margin-bottom:unset;
+                margin-right:30px;
+            }
+                .four .cards .cards-item:last-of-type {
+                    // margin-left:30px;
+                    margin-right:0;
+                }
+        }
+
+        @media screen and (min-width:1600px) {
+            .style-3 .cards-item:nth-of-type(1) {
+                margin-left:15px;
+            }
+            .style-3 .cards-item:nth-of-type(2) {
+                margin-left:30px;
+                margin-right:30px;
+            }
+        }
+
+
+
+
+        .cards .cards-item .card-link {
+            // border-bottom:10px solid #FF0;
+            width:100%;
+        }
+            .style-2 .cards .cards-item .card-link {
+                // border-top:5px solid #FF0;
+                display:block;
+                width:unset;
+            }
+
+            @media screen and (min-width:768px) {
+                .cards .cards-item .card-link {
+                    display:flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                    //--  TWO CARDS  --------------------
+                    .two .cards .cards-item .card-link {
+                        display:block;
+                    }
+            }
+            
+            @media screen and (min-width:992px) {
+                //--  THREE CARDS  --------------------
+                .three:not(.style-3) .cards .cards-item .card-link {
+                    display:block;
+                    // width:calc(33.3333% - 15px);
+                }
+            }
+
+            @media screen and (min-width:1200px) {
+                //--  TWO CARDS  --------------------
+                .two .cards .cards-item .card-link {
+                    display:flex;
+                }
+
+                //--  FOUR CARDS  --------------------
+                .four .cards .cards-item .card-link {
+                    display:block;
+                }
+            }
+
+            @media screen and (min-width:1600px) {
+                //--  THREE CARDS  --------------------
+                // .container-fluid.three:not(.style-3) .cards .cards-item .card-link {
+                //     display:flex;
+                // }
+            }
+
+            @media screen and (min-width:1800px) {
+                //--  THREE CARDS  --------------------
+                .container-fluid.three:not(.style-3) .cards .cards-item .card-link {
+                    display:flex;
+                }
+
+                //--  FOUR CARDS  --------------------
+                .container-fluid.four .cards .cards-item .card-link {
+                    display:flex;
+                }
+            }
+
+
+
+
+
+
+            .cards .cards-item .card-img-container {
+                // border-bottom:10px solid #00F;
+                position: relative;
+                width:100%;
+                height:calc(85vw - 30px);
+                background-size:cover;
+                background-position:center center;
+            }
+                .container-fluid.style-2 .cards .cards-item .card-img-container {
+                    height:calc(90vw - 30px);
+                }
+
+                
+                .style-3 .cards .cards-item .card-img-container {
+                    // border:1px solid #0F0;
+                    height:unset;
+                    overflow:hidden;
+                }
+                    .style-3 .cards .cards-item .card-img-container img {
+                        width:calc(100vw - 30px);
+                    }
+                    @media screen and (min-width:576px) {
+                        .style-3 .cards .cards-item .card-img-container img {
+                            width:100%;
+                        }
+                    }
+
+
+                @media screen and (min-width:480px) {
+                    .cards .cards-item .card-img-container {
+                        height:calc(65vw - 30px);
+                    }
+                }
+
+                @media screen and (min-width:576px) {
+                    .cards .cards-item .card-img-container {
+                        height:18rem;
+                    }
+                        .container-fluid .cards .cards-item .card-img-container {
+                            height:23rem;
+                        }
+
+                    .style-2 .cards .cards-item .card-img-container {
+                        height:28rem;
+                    }
+                    .style-2.four .cards .cards-item .card-img-container {
+                        height:20rem;
+                    }
+
+                    .container-fluid.style-2.two .cards .cards-item .card-img-container {
+                        height:calc(50vw - 30px);
+                    }
+
+                    .container-fluid.style-2.four .cards .cards-item .card-img-container {
+                        height:46vw;
+                    }
+
+                    .style-3 .cards .cards-item .card-img-container {
+                        height:unset;
+                    }
+                }
+
+                @media screen and (min-width:768px) {
+                    .cards .cards-item .card-img-container {
+                        min-width:18rem;
+                        height:18rem;
+                        margin-right:auto;
+                    }
+                        .container-fluid .cards .cards-item .card-img-container {
+                            height:18rem;
+                        }
+
+                        //--  TWO CARDS (style-2)  --------------------
+                        .style-2.two .cards .cards-item .card-img-container {
+                            height:20rem;
+                        }
+
+                        .container-fluid.style-2 .cards .cards-item .card-img-container {
+                            height:calc(70vw - 30px);
+                        }
+
+                        .container-fluid.style-2.three .cards .cards-item .card-img-container {
+                            height:calc(35vw - 30px);
+                        }
+
+                        .style-3 .cards .cards-item .card-img-container {
+                            height:unset;
+                            min-width:unset;
+                        }
+                }
+
+                @media screen and (min-width:992px) {
+                    .cards .cards-item .card-img-container {
+                        min-width:23rem;
+                        height:14rem;
+                    }
+                        .container-fluid .cards .cards-item .card-img-container {
+                            height:14rem;
+                        }
+
+                        .style-2 .cards .cards-item .card-img-container {
+                            height:33rem;
+                        }
+                            //--  TWO CARDS (style-2)  --------------------
+                            .style-2.two .cards .cards-item .card-img-container {
+                                height:25rem;
+                            }
+
+                        //--  THREE CARDS  --------------------
+                        .three:not(.style-3) .cards .cards-item .card-img-container {
+                            width:100%;
+                            min-width:100%;
+                            max-width:100%;
+                            height:14rem;
+                        }
+
+                        .container-fluid.style-2 .cards .cards-item .card-img-container {
+                            height:calc(50vw - 30px);
+                        }
+
+                        .container-fluid.style-2.two .cards .cards-item .card-img-container {
+                            height:calc(38vw - 30px);
+                        }
+
+                        .container-fluid.style-2.four .cards .cards-item .card-img-container {
+                            height:24vw;
+                            min-width:unset;
+                        }
+
+                        .style-3 .cards .cards-item .card-img-container {
+                            height:unset;
+                        }
+                }
+
+                @media screen and (min-width:1200px) {
+                    .cards .cards-item .card-img-container {
+                        min-width:30rem;
+                        height:18rem;
+                    }
+                        .container-fluid .cards .cards-item .card-img-container {
+                            height:18rem;
+                        }
+
+                        //--  TWO CARDS  --------------------
+                        .cards .cards-item .card-img-container {
+                            min-width:40%;
+                            height:18rem;
+                        }
+
+                        //--  THREE CARDS  --------------------
+                        .container-fluid.three:not(.style-3) .cards .cards-item .card-img-container {
+                            height:14rem;
+                        }
+
+                        //--  FOUR CARDS  --------------------
+                        .four .cards .cards-item .card-img-container {
+                            height:13rem;
+                        }
+
+                    //--  THREE CARDS (style-2)  --------------------
+                    .style-2.three .cards .cards-item .card-img-container {
+                        height:18rem;
+                    }
+
+                    //--  FOUR CARDS (style-2)  --------------------
+                    .style-2.four .cards .cards-item .card-img-container {
+                        height:15rem;
+                    }
+
+                    .style-3 .cards .cards-item .card-img-container {
+                        height:unset;
+                    }
+                }
+
+                @media screen and (min-width:1400px) {
+                    .container-fluid .cards .cards-item .card-img-container {
+                        min-width:50%;
+                        height:30vw;
+                    }
+                        //--  TWO CARDS  --------------------
+                        .container-fluid.two .cards .cards-item .card-img-container {
+                            height:25vw;
+                        }
+
+                        //--  THREE CARDS  --------------------
+                        .container-fluid.three:not(.style-3) .cards .cards-item .card-img-container {
+                            height:20vw;
+                        }
+
+                        //--  FOUR CARDS  --------------------
+                        .container-fluid.four .cards .cards-item .card-img-container {
+                            height:16vw;
+                        }
+
+                        .container-fluid.style-2.two .cards .cards-item .card-img-container {
+                            height:30rem;
+                        }
+
+                        .container-fluid.style-2.three .cards .cards-item .card-img-container {
+                            height:calc(30vw - 30px);
+                        }
+                        
+                        .style-3 .cards .cards-item .card-img-container {
+                            height:unset;
+                            min-width:unset;
+                        }
+                }
+                
+                @media screen and (min-width:1600px) {
+                    //--  TWO CARDS  --------------------
+                    .container-fluid.two .cards .cards-item .card-img-container {
+                        height:20vw;
+                    }
+
+                    .container-fluid.style-2 .cards .cards-item .card-img-container {
+                        height:calc(40vw - 30px);
+                    }
+
+                    .container-fluid.style-2.three .cards .cards-item .card-img-container {
+                        height:calc(28vw - 30px);
+                    }
+
+                    .container-fluid.style-2.four .cards .cards-item .card-img-container {
+                        height:22vw;
+                    }
+                }
+                
+                @media screen and (min-width:1800px) {
+                    //--  FOUR CARDS  --------------------
+                    .container-fluid.four .cards .cards-item .card-img-container {
+                        height:26rem;
+                    }
+                    .container-fluid.style-2 .cards .cards-item .card-img-container {
+                        height:calc(30vw - 30px);
+                    }
+                    .container-fluid.style-2.two .cards .cards-item .card-img-container {
+                        height:32rem;
+                    }
+
+                    .three:not(.style-3) .cards .cards-item .card-img-container {
+                        min-width:50%;
+                    }
+                }
+                
+                @media screen and (min-width:1920px) {
+                    //--  TWO CARDS  --------------------
+                    .container-fluid.two .cards .cards-item .card-img-container {
+                        height:16vw;
+                    }
+
+                    .container-fluid.style-2.three .cards .cards-item .card-img-container {
+                        height:calc(26vw - 30px);
+                    }
+                }
+                
+                @media screen and (min-width:2000px) {
+                    //--  THREE CARDS  --------------------
+                    .container-fluid.three:not(.style-3) .cards .cards-item .card-img-container {
+                        height:18vw;
+                    }
+
+                    .container-fluid.style-2.four .cards .cards-item .card-img-container {
+                        height:20vw;
+                    }
+
+                    .style-3 .cards .cards-item .card-img-container {
+                        height:unset;
+                    }
+                }
+                
+                @media screen and (min-width:2400px) {
+                    //--  THREE CARDS  --------------------
+                    .container-fluid.three:not(.style-3) .cards .cards-item .card-img-container {
+                        height:13vw;
+                    }
+
+                    //--  FOUR CARDS  --------------------
+                    .container-fluid.four .cards .cards-item .card-img-container {
+                        height:24rem;
+                    }
+
+                    .container-fluid.style-2 .cards .cards-item .card-img-container {
+                        height:calc(26vw - 30px);
+                    }
+
+                    
+                    .container-fluid.style-2.two .cards .cards-item .card-img-container {
+                        height:40rem;
+                    }
+                }
+
+                .cards .cards-item .card-img-container::after {
+                    position: absolute;
+                    top:63px;
+                    right:0px;
+                    content:'';
+                    display:inline-block;
+                    border:25px solid transparent;
+                    border-right:25px solid #FFF;
+                }
+                    .style-2 .cards .cards-item .card-img-container::after,
+                    .style-3 .cards .cards-item .card-img-container::after {
+                        display:none;
+                    }
+
+
+
+
+
+            .cards .cards-item .card-details {
+                margin:1rem 1rem 0 1rem;
+            }
+                .style-2 .cards .cards-item .card-details,
+                .style-2.two .cards .cards-item .card-details {
+                    // border-top:5px solid #00F;
+                    margin:0;
+                    // padding:1rem;
+                }
+                @media screen and (min-width:768px) {
+                    .cards .cards-item .card-details {
+                        min-width:calc(100% - 18rem - 35px);
+                        margin:0 0 0 35px;
+                    }
+
+                        //--  TWO CARDS  --------------------
+                        .two .cards .cards-item .card-details {
+                            min-width:unset;
+                            margin:1rem 1rem 0 1rem;
+                        }
+                }
+                @media screen and (min-width:992px) {
+                    .cards .cards-item .card-details {
+                        min-width:calc(100% - 23rem - 35px);
+                    }
+
+                        //--  THREE CARDS  --------------------
+                        .three:not(.style-2):not(.style-3) .cards .cards-item .card-details {
+                            min-width:unset;
+                            margin:1rem 1rem 0 1rem;
+                        }
+                }
+                @media screen and (min-width:1200px) {
+                    .cards .cards-item .card-details {
+                        min-width:calc(100% - 30rem - 35px);
+                    }
+
+                        //--  TWO CARDS  --------------------
+                        .two .cards .cards-item .card-details {
+                            min-width:calc(60% - 30px);
+                        }
+
+                        //--  FOUR CARDS  --------------------
+                        .four:not(.style-2) .cards .cards-item .card-details {
+                            min-width:unset;
+                            margin:1rem 1rem 0 1rem;
+                        }
+                }
+                @media screen and (min-width:1400px) {
+                    .container-fluid .cards .cards-item .card-details {
+                        min-width:calc(50% - 35px);
+                    }
+                }
+                @media screen and (min-width:1600px) {
+                    .container-fluid.three:not(.style-3) .cards .cards-item .card-details {
+                        min-width:50%;
+                        padding:0 1rem;
+                    }
+                }
+
+
+
+
+                .style-2 .cards .cards-item .card-details .card-detail-text {
+                    position:absolute;
+                    bottom:0;
+                    width:100%;
+                    color:#FFF;
+                    padding:6vw;
+                    z-index: 2;
+                }
+                    .style-3 .card-detail-text {
+                        position:absolute;
+                        bottom:0;
+                        width:100%;
+                        color:#FFF;
+                        padding:3.5vw 5vw 5vw 5vw;
+                        transform:translateY(100%);
+                        transition:all .1s;
+                        // z-index: 2;
+                    }
+                        .style-3 .cards-item:hover .card-detail-text {
+                            transform:translateY(1px);
+                        }
+                    .container-fluid.style-2 .cards .cards-item .card-details .card-detail-text {
+                        padding:15vw 12vw;
+                    }
+                    @media screen and (min-width:480px) {
+                        .style-2 .cards .cards-item .card-details .card-detail-text {
+                            padding:8vw;
+                        }
+                    }
+                    @media screen and (min-width:576px) {
+                        .style-2 .cards .cards-item .card-details .card-detail-text {
+                            padding:6.5rem 5rem;
+                        }
+
+                        .container-fluid.style-2.two .cards .cards-item .card-details .card-detail-text {
+                            padding:7vw 5vw;
+                        }
+
+                        .container-fluid.style-2.four .cards .cards-item .card-details .card-detail-text {
+                            padding:8vw 6vw;
+                        }
+                    }
+                    @media screen and (min-width:768px) {
+                        .style-2 .cards .cards-item .card-details .card-detail-text {
+                            // padding:6.5rem 5rem;
+                            max-width:85%;
+                        }
+                        //--  TWO CARDS (style-2)  --------------------
+                        .style-2.two .cards .cards-item .card-details .card-detail-text {
+                            padding:4rem 3rem;
+                            max-width:95%;
+                        }
+                        //--  THREE CARDS (style-2)  --------------------
+                        .style-2.three .cards .cards-item .card-details .card-detail-text {
+                            padding:6.5rem 5rem;
+                            max-width:85%;
+                        }
+                        //--  FOUR CARDS (style-2)  --------------------
+                        .style-2.four .cards .cards-item .card-details .card-detail-text {
+                            padding:3rem;
+                            max-width:95%;  
+                        }
+
+                        .container-fluid.style-2.three .cards .cards-item .card-details .card-detail-text {
+                            padding:4vw 3vw;
+                        }
+
+                        .container-fluid.style-2.four .cards .cards-item .card-details .card-detail-text {
+                            padding:10vw 8vw;
+                        }
+                    }
+                    @media screen and (min-width:992px) {
+                        //--  THREE CARDS (style-2)  --------------------
+                        .style-2.three .cards .cards-item .card-details .card-detail-text {
+                            padding:3rem 1.5rem;
+                            max-width:95%;
+                        }
+                        .container-fluid.style-2 .cards .cards-item .card-details .card-detail-text {
+                            padding:10vw 9vw;
+                        }
+                        .container-fluid.style-2.two .cards .cards-item .card-details .card-detail-text {
+                            max-width:85%;
+                        }
+
+                        .container-fluid.style-2.four .cards .cards-item .card-details .card-detail-text {
+                            padding:3vw 2vw;
+                        }
+
+                        .style-3 .card-detail-text {
+                            padding:.5rem 1rem 1rem 1rem;
+                            transform:translateY(100%);
+                            transition:all .1s;
+                            // z-index: 2;
+                        }
+                    }
+                    @media screen and (min-width:1200px) {
+                        //--  TWO CARDS (style-2)  --------------------
+                        .style-2.two .cards .cards-item .card-details .card-detail-text {
+                            padding:5rem 4rem;
+                            max-width:85%;
+                        }
+                        //--  THREE CARDS (style-2)  --------------------
+                        .style-2.three .cards .cards-item .card-details .card-detail-text {
+                            padding:3rem;
+                            max-width:100%;
+                        }
+                        //--  FOUR CARDS (style-2)  --------------------
+                        .style-2.four .cards .cards-item .card-details .card-detail-text {
+                            padding:2rem 1.5rem;
+                            max-width:95%;
+                        }
+
+                        .container-fluid.style-2.two .cards .cards-item .card-details .card-detail-text {
+                            padding:8vw 6vw;
+                        }
+                    }
+                    @media screen and (min-width:1400px) {
+                        .container-fluid.style-2.two .cards .cards-item .card-details .card-detail-text {
+                            padding:6rem 6vw;
+                        }
+                    }
+                    @media screen and (min-width:1600px) {
+                        .style-3 .card-detail-text {
+                            padding:1rem 2rem 2rem 2rem;
+                        }
+                    }
+                    @media screen and (min-width:1800px) {
+                        .container-fluid.style-2 .cards .cards-item .card-details .card-detail-text {
+                            padding:6vw;
+                        }
+
+                        .container-fluid.style-2.four .cards .cards-item .card-details .card-detail-text {
+                            padding:4vw 3vw;
+                        }
+                    }
+
+
+
+
+                .cards .cards-item .card-details .card-pretitle,
+                .cards .cards-item .card-details .card-title,
+                .cards .cards-item .card-details .card-subtitle,
+                .cards .cards-item .card-details .card-text {
+                    display:block;
+                }
+
+
+                    .cards .cards-item .card-details .card-pretitle {
+                        font-size:1rem;
+                    }
+                        .style-2 .cards .cards-item .card-details .card-pretitle {
+                            position: relative;
+                            left:0;
+                            // border-bottom:2px solid #FFF;
+                            // font-size:1.5rem;
+                            font-size:1rem;
+                            font-weight:300;
+                            line-height:1;
+                            // margin-bottom:.3rem;
+                            @include transition(all .2s);
+                        }
+                            .style-2 .cards .cards-item:hover .card-details .card-pretitle {
+                                left:.5rem;
+                            }
+
+                        .container-fluid.style-2.four .cards .cards-item .card-details .card-pretitle {
+                            font-size:6vw;
+                        }
+
+                        @media screen and (min-width:480px) {
+                            .style-2 .cards .cards-item .card-details .card-pretitle {
+                                font-size:1.5rem;
+                            }
+                            .container-fluid.style-2.four .cards .cards-item .card-details .card-pretitle {
+                                font-size:5vw;
+                            }
+                        }
+                        @media screen and (min-width:576px) {
+                            .container-fluid.style-2.two .cards .cards-item .card-details .card-pretitle {
+                                font-size:1.25rem;
+                            }
+                            .container-fluid.style-2.four .cards .cards-item .card-details .card-pretitle {
+                                font-size:3vw;
+                            }
+                        }
+                        @media screen and (min-width:768px) {
+                            .style-2.two .cards .cards-item .card-details .card-pretitle,
+                            .container-fluid.style-2.three .cards .cards-item .card-details .card-pretitle {
+                                font-size:1rem;
+                            }
+                            .style-2.four .cards .cards-item .card-details .card-pretitle {
+                                font-size:1.25rem;
+                            }
+                        }
+                        @media screen and (min-width:992px) {
+                            .style-2.two .cards .cards-item .card-details .card-pretitle {
+                                font-size:1.5rem;
+                            }
+                            .style-2.three .cards .cards-item .card-details .card-pretitle {
+                                font-size:1.25rem;
+                            }
+
+                            .container-fluid.style-2.two .cards .cards-item .card-details .card-pretitle {
+                                font-size:1.5rem;
+                            }
+                            .container-fluid.style-2.three .cards .cards-item .card-details .card-pretitle {
+                                font-size:1.3rem;
+                            }
+                            .container-fluid.style-2.four .cards .cards-item .card-details .card-pretitle {
+                                font-size:1.75vw;
+                            }
+                        }
+                        @media screen and (min-width:1200px) {
+                            .style-2.three .cards .cards-item .card-details .card-pretitle {
+                                font-size:1.5rem;
+                            }
+                            .style-2.four .cards .cards-item .card-details .card-pretitle {
+                                font-size:1.1rem;
+                            }
+                            .container-fluid.style-2.three .cards .cards-item .card-details .card-pretitle {
+                                font-size:1.9vw;
+                            }
+                        }
+                        @media screen and (min-width:1400px) {
+                            .container-fluid.style-2.three .cards .cards-item .card-details .card-pretitle {
+                                font-size:1.5vw;
+                            }
+                        }
+                        @media screen and (min-width:1600px) {
+                            .container-fluid.style-2.three .cards .cards-item .card-details .card-pretitle {
+                                font-size:1.4vw;
+                            }
+                            .container-fluid.style-2.four .cards .cards-item .card-details .card-pretitle {
+                                font-size:1.5vw;
+                            }
+                        }
+                        @media screen and (min-width:1600px) {
+                            .container-fluid.style-2.three .cards .cards-item .card-details .card-pretitle {
+                                font-size:1.2vw;
+                            }
+                        }
+                        @media screen and (min-width:1800px) {
+                            .container-fluid.style-2.four .cards .cards-item .card-details .card-pretitle {
+                                font-size:1.25vw;
+                            }
+                        }
+                        @media screen and (min-width:2400px) {
+                            .container-fluid.style-2.three .cards .cards-item .card-details .card-pretitle {
+                                font-size:1vw;
+                            }
+                            .container-fluid.style-2.four .cards .cards-item .card-details .card-pretitle {
+                                font-size:1vw;
+                            }
+                        }
+
+
+                    .cards .cards-item .card-details .card-title {
+                        font-family:$barlow-condensed;
+                        font-size:2.375rem;
+                        line-height:2.25rem;
+                        font-weight:600;
+                    }
+                        .style-2 .cards .cards-item .card-details .card-title {
+                            position: relative;
+                            left:0;
+                            font-family:$roboto;
+                            text-transform:uppercase;
+                            font-weight:900;
+                            @include letter-spacing(0);
+                            margin-bottom:unset;
+                            padding-bottom:.4rem;
+                            @include transition(all .2s);
+                            font-size:1.5rem;
+                            line-height:1.5rem;
+                        }
+                            .style-2 .cards .cards-item:hover .card-details .card-title {
+                                left:.5rem;
+                                transition-delay: .1s;
+                            }
+                            .style-2 .cards .cards-item .card-details .card-title::after {
+                                display:block;
+                                position: absolute;
+                                left:0;
+                                right:0;
+                                bottom:-.1875rem;
+                                background:rgba(255,255,255,.5);
+                                content:'';
+                                width:100%;
+                                height:.1rem;
+                                @include transition(all .2s);
+                            }
+                                .style-2 .cards .cards-item:hover .card-details .card-title::after {
+                                    left:-.5rem;
+                                    right:.5rem;
+                                    transition-delay: .1s;
+                                }
+
+                        .style-3 .card-title {
+                            display:block;
+                            // position: relative;
+                            // left:0;
+                            font-family:$barlow-condensed;
+                            text-transform:none;
+                            font-weight:500;
+                            @include letter-spacing(10);
+                            margin-bottom:unset;
+                            padding-bottom:unset;
+                            font-size:2.375rem;
+                            line-height:2.375rem;
+                            @include opacity(0);
+                            transform:translateY(75px);
+                            @include transition(all .1s);
+                        }
+                            .style-3 .cards-item:hover .card-title {
+                                @include opacity(1);
+                                transform:translateY(0px);
+                                transition-delay: .1s;
+                            }
+
+                        .container-fluid.style-2.four .cards .cards-item .card-details .card-title {
+                            font-size:9vw;
+                            line-height:8.5vw;
+                        }
+                    @media screen and (min-width:480px) {
+                        .style-2 .cards .cards-item .card-details .card-title {
+                            font-size:2.375rem;
+                            line-height:2.25rem;
+                        }
+                        .style-2.four .cards .cards-item .card-details .card-title {
+                            font-size:1.6rem;
+                            line-height:1.5rem;
+                        }
+                    }
+                    @media screen and (min-width:576px) {
+                        .container-fluid.style-2.two .cards .cards-item .card-details .card-title {
+                            font-size:1.5rem;
+                            line-height:1.25rem;
+                        }
+                        .container-fluid.style-2.four .cards .cards-item .card-details .card-title {
+                            font-size:4.25vw;
+                            line-height:4vw;
+                        }
+                        .style-3 .card-title {
+                            font-size:1.5rem;
+                            line-height:1.5rem;
+                        }
+                    }
+                    @media screen and (min-width:768px) {
+                        .style-2.two .cards .cards-item .card-details .card-title,
+                        .container-fluid.style-2.three .cards .cards-item .card-details .card-title {
+                            font-size:1.5rem;
+                            line-height:1.375rem;
+                        }
+                        .container-fluid.style-2.two .cards .cards-item .card-details .card-title {
+                            font-size:2rem;
+                            line-height:1.75rem;
+                        }
+                    }
+                    @media screen and (min-width:992px) {
+                        .style-2 .cards .cards-item .card-details .card-title,
+                        .style-2.two .cards .cards-item .card-details .card-title {
+                            font-size:2.375rem;
+                            line-height:2.25rem;
+                        }
+                        .style-2.three .cards .cards-item .card-details .card-title {
+                            font-size:1.75rem;
+                            line-height:1.65rem;
+                        }
+                        .container-fluid.style-2.two .cards .cards-item .card-details .card-title {
+                            font-size:2.375rem;
+                            line-height:2.25rem;
+                        }
+                        .container-fluid.style-2.three .cards .cards-item .card-details .card-title {
+                            font-size:1.9rem;
+                            line-height:1.8rem;
+                        }
+                        .container-fluid.style-2.four .cards .cards-item .card-details .card-title {
+                            font-size:2vw;
+                            line-height:1.75vw;
+                        }
+                    }
+                    @media screen and (min-width:1200px) {
+                        .style-2.three .cards .cards-item .card-details .card-title {
+                            font-size:2rem;
+                            line-height:1.925rem;
+                        }
+                        .style-2.four .cards .cards-item .card-details .card-title {
+                            font-size:1.5rem;
+                            line-height:1.4rem;
+                        }
+                        .container-fluid.style-2.three .cards .cards-item .card-details .card-title {
+                            font-size:3.2vw;
+                            line-height:3vw;
+                        }
+                    }
+                    @media screen and (min-width:1400px) {
+                        .container-fluid.style-2.three .cards .cards-item .card-details .card-title {
+                            font-size:2.8vw;
+                            line-height:2.6vw;
+                        }
+                    }
+                    @media screen and (min-width:1600px) {
+                        .container-fluid.style-2.three .cards .cards-item .card-details .card-title {
+                            font-size:2.4vw;
+                            line-height:2.2vw;
+                        }
+                        .style-3 .card-title {
+                            font-size:2.375rem;
+                            line-height:2.375rem;
+                        }
+                    }
+                    @media screen and (min-width:1800px) {
+                        .container-fluid.style-2.three .cards .cards-item .card-details .card-title {
+                            font-size:2.2vw;
+                            line-height:2vw;
+                        }
+                    }
+                    @media screen and (min-width:2400px) {
+                        .container-fluid.style-2.three .cards .cards-item .card-details .card-title {
+                            font-size:1.8vw;
+                            line-height:1.6vw;
+                        }
+                    }
+
+
+                    .cards .cards-item .card-details .card-subtitle {
+                        color:$grey;
+                        font-size:.9em;
+                        font-style:italic;
+                        margin-top:-.75rem;
+                        margin-bottom:.75rem;
+                    }
+                        .style-3 .card-subtitle {
+                            display:block;
+                            transform: translateY(30px);
+                            @include opacity(0);
+                            transition:all .1s;
+                        }
+                            .style-3 .cards-item:hover .card-subtitle {
+                                transform: translateY(0px);
+                                @include opacity(1);
+                                transition-delay:.2s;
+                            }
+
+                        @media screen and (min-width:576px) {
+                            .style-3 .card-subtitle {
+                                margin-top:.5rem;
+                                font-size:.8rem;
+                                line-height:.8rem;
+                            }
+                        }
+
+                        @media screen and (min-width:1600px) {
+                            .style-3 .card-subtitle {
+                                // margin-top:.5rem;
+                                font-size:1rem;
+                                line-height:1rem;
+                            }
+                        }
+
+
+                    .cards .cards-item .card-details .card-text {
+                        font-size:1rem;
+                        line-height:1.6875rem;
+                        color:$black;
+                    }
+
+
+
+
+
+                
+
+
+
+
+
+                .style-2 .cards .cards-item .card-details img {
+                    position: absolute;
+                    top:0;
+                    left:0;
+                    @include opacity(.075);
+                    width:100%;
+                    height:100%;
+                    object-fit: cover;
+                    object-position: center;
+                    @include transition(all .2s);
+                }
+                    .style-2 .cards .cards-item .card-details:hover img {
+                        @include opacity(.5);
+                        @include transition(all .2s);
+                    }
+
+
+
+
+
+                
+
+
+
+
+
+
+
+                @media screen and (min-width:1400px) {
+                    .description-text h2,
+                    .description-text p {
+                        padding-left:3vw;
+                        padding-right:3vw;
+                    }
+                }
+
+                @media screen and (min-width:1600px) {
+                    .description-text h2 {
+                        font-size:3rem;
+                        @include letter-spacing(10);
+                    }
+                    .description-text p {
+                        max-width:78ch
+                    }
+                }

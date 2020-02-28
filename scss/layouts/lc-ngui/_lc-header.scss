@@ -1,0 +1,394 @@
+.clear {float:none; clear:both; width:100%; height:1px; font-size:1px; line-height:1px; overflow:hidden;}
+.headerLogo {
+    filter: drop-shadow(0px 0px 20px rgba(0,0,0,.5));
+    -webkit-filter: drop-shadow(0px 0px 20px rgba(0,0,0,.5));
+    -moz-filter: drop-shadow(0px 0px 20px rgba(0,0,0,.5));
+}
+
+
+
+//$jumbotron-height-xs: 610px;
+//$jumbotron-height-768: 500px;
+//$jumbotron-height-1200: 733px;
+
+
+#lc-header {
+    position:relative;
+    overflow:hidden;
+}
+
+#lc-header .bg-video video {
+    display:block;
+    position: absolute;
+    top:0;
+    left:-2%;
+    object-fit: cover;
+    object-position: center;
+    z-index: -1;
+    min-width:104%;
+    min-height:104%;
+    transform: rotateZ(-1.2deg);
+    
+}
+    @media screen and (min-width:1600px) {
+        #lc-header .bg-video video {
+            top:unset;
+            bottom:-10vw;
+        }
+    }
+    @media screen and (min-width:1800px) {
+        #lc-header .bg-video video {
+            bottom:-8vw;
+        }
+    }
+    @media screen and (min-width:1920px) {
+        #lc-header .bg-video video {
+            bottom:-9vw;
+        }
+    }
+    @media screen and (min-width:2400px) {
+        #lc-header .bg-video video {
+            bottom:-13vw;
+        }
+    }
+
+
+
+#lc-header p{
+    color:#FFF;
+    transform-style: preserve-3d;
+}
+
+.bg-grad {
+    background: -moz-linear-gradient(
+        90deg,
+        rgba(0,0,0,0.95) 0%,
+        rgba(0,0,0,0.6) 40%,
+        rgba(0,0,0,0) 65%,
+        rgba(0,0,0,0) 100%
+        ); /* ff3.6+ */
+    background: -webkit-gradient(
+        linear, left top, left bottom,
+        color-stop(0%, rgba(0,0,0,0)),
+        color-stop(55%, rgba(0,0,0,0)),
+        color-stop(60%, rgba(0,0,0,0.6)),
+        color-stop(100%, rgba(0,0,0,0.95))
+        ); /* safari4+,chrome */
+    background: -webkit-linear-gradient(
+        90deg,
+        rgba(0,0,0,0.95) 0%,
+        rgba(0,0,0,0.6) 40%,
+        rgba(0,0,0,0) 65%,
+        rgba(0,0,0,0) 100%
+        ); /* safari5.1+,chrome10+ */
+    background: -o-linear-gradient(
+        90deg,
+        rgba(0,0,0,0.95) 0%,
+        rgba(0,0,0,0.6) 40%,
+        rgba(0,0,0,0) 65%,
+        rgba(0,0,0,0) 100%
+        ); /* opera 11.10+ */
+    background: -ms-linear-gradient(
+        90deg,
+        rgba(0,0,0,0.95) 0%,
+        rgba(0,0,0,0.6) 40%,
+        rgba(0,0,0,0) 65%,
+        rgba(0,0,0,0) 100%
+        ); /* ie10+ */
+    background: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.95) 0%,
+        rgba(0,0,0,0.6) 40%,
+        rgba(0,0,0,0) 65%,
+        rgba(0,0,0,0) 100%
+        ); /* w3c */
+    filter: progid:DXImageTransform.Microsoft.gradient(
+        startColorstr='#000000',
+        endColorstr='#000000',
+        GradientType=0
+        ); /* ie6-9 */
+    z-index: 20;
+}
+
+.bg-pattern {
+    //background-image:url(https://databccwebmedia.blob.core.windows.net/images/brand/patterns/pattern-screen-overlay.png);
+    background-repeat: repeat;
+    padding:20px 0;
+    z-index: 20;
+}
+
+.text-left {
+    /*background:rgba(30,45,72,.95);*/
+    color:#FFF;
+    opacity:.95;
+    padding:30px;
+}
+    .text-left h4 {font-weight:900; margin-bottom:30px; font-size:28px; line-height:36px;}
+    .text-left p {font-size:16px; line-height:27px; @include letter-spacing(20);}
+
+
+.most-important-links {padding:80px 0 30px 0;}
+    // .most-important-links span {
+    //     display:block;
+    //     // border-top:1px solid #F00;
+    // }
+        // .most-important-links span a, .most-important-links span a:visited {
+        .most-important-links a.button, .most-important-links a.button:visited {
+            display:inline-block;
+            width:100%;
+            text-align:center;
+            font-size:9vw;
+            margin-bottom:.5rem;
+        }
+
+
+
+
+
+#headerTertiaryLinks {
+    // border-bottom:1px solid $lightGrey;
+    background: transparent !important;
+    color:#FFF;
+    padding:0px 0 30px 0;
+    margin-top:-10px;
+}
+    #headerTertiaryLinks p {
+        margin:0;
+        // font-size:.8em;
+    }
+        #headerTertiaryLinks .tertiaryTitle {
+            font-weight:bold;
+            margin-right:10px;
+        }
+        #headerTertiaryLinks .tertiaryLink {
+            display:inline-block;
+        }
+            #headerTertiaryLinks .tertiaryLink a {
+                padding:0px 5px;
+            }
+                #headerTertiaryLinks .tertiaryLink a:not(:hover),
+                #headerTertiaryLinks .tertiaryLink a:not(:hover):visited {
+                    color:$goldLight;
+                    background:none;
+                }
+                    #headerTertiaryLinks .tertiaryLink a:hover {
+                        color:$goldLight;
+                        background:none;
+                        text-decoration:underline;
+                    }
+                // #headerTertiaryLinks .tertiaryLink::after {
+                //     display:inline-block;
+                //     content:'|';
+                //     padding:0 5px;
+                // }
+                    #headerTertiaryLinks .tertiaryLink:last-of-type::after {
+                        content:'';
+                    }
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:480px) {
+    .text-left h4 {
+        font-size: 37px;
+        line-height: 45px;
+        /*padding-right: 26%;*/
+    }
+
+
+    .most-important-links a.button {
+        font-size: 2.5rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:576px) {
+    .text-left {
+        margin-left:-15px;
+        margin-right:-15px;
+    }
+        .text-left h4 {
+            font-size: 37px;
+            line-height: 45px;
+            padding-right: 15%;
+        }
+    .most-important-links {
+        max-width:546px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:768px) {
+    .text-left, .most-important-links {
+        width:576px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:992px) {
+    .bg-pattern {
+        padding: 60px 0 0 0;
+    }
+    .text-left {
+        width: 70%;
+        margin:0;
+    }
+        .text-left h4 {
+            padding-right: 20%;
+        }
+    .most-important-links {
+        width: calc(100% - 30px);
+        max-width: 1550px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: space-between;
+        align-content: space-between;
+    }
+
+    // .most-important-links span a, .most-important-links span a:visited {
+    //     font-size: 2vw !important;
+    //     padding-left: 25px;
+    //     padding-right: 25px;
+    // }
+
+    .most-important-links a.button, .most-important-links a.button:visited {
+        margin-left:.25rem;
+        margin-right:.25rem;
+    }
+
+    #headerTertiaryLinks .tertiaryLink::before {
+        display:inline-block;
+        content:'/';
+        color:$yellow;
+        padding:0 5px;
+        @include opacity (.35);
+    }
+        #headerTertiaryLinks .tertiaryLink:first-of-type::before {
+            content:'';
+        }
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:1200px) {
+    .text-left {
+        width: 65%;
+    }
+        .text-left h4 {
+            padding-right: 26%;
+        }
+}
+
+
+
+
+
+
+
+
+@media screen and (min-width:1400px) {
+    .most-important-links span a, .most-important-links span a:visited {
+        font-size: 2.25vw !important;
+        @include letter-spacing(50);
+    }
+}
+
+
+
+
+
+
+
+
+@media screen and (min-width:1600px) {
+    .most-important-links span a, .most-important-links span a:visited {
+        font-size: 2.4rem !important;
+    }
+}
+
+
+
+
+
+
+
+
+@media screen and (min-width:1920px) {
+    .most-important-links span a, .most-important-links span a:visited {
+        font-size: 2.5rem !important;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+//  WHEN WE GET THE STYLE ORDER CHANGED, THIS CAN BE MOVED TO THE DEMO COMPONENT STYLES  -----------
+.text-left {
+    background: rgba(30,45,72,.95);
+}
+
+.most-important-links span a, .most-important-links span a:visited {
+    // border: 4px solid $yellow;
+    // color: $yellow;
+}
+
+.most-important-links span a:hover {
+    /*background: $yellow;*/
+    // color: $black;
+}
+
+.most-important-links span a:after {
+    // background: rgba(255,206,43,0);
+}
+
+.most-important-links span a:hover:after {
+    // background: rgba(255,206,43,1);
+}

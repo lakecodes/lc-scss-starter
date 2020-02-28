@@ -2,26 +2,30 @@
 SCSS Starter Pack - Just a good jumping off point.
 
 
-## Verion 0.4beta
+## Verion 0.4.1beta
 Built by [Lake County Board of County Commissioners Office of Communications](https://lakecountyfl.gov/offices/communications/)
 
 
 ## Outside Vendors:
-- [Bootstrap (*v4.4.1*)](https://getbootstrap.com/)
-- [Google Fonts](https://fonts.google.com/)
-  - [Material Icons (*Rounded*)](https://material.io/resources/icons/?style=round)
-  - [Roboto](https://fonts.google.com/specimen/Roboto)
-  - [Roboto Condensed](https://fonts.google.com/specimen/Roboto+Condensed)
-  - [Barlow Condensed](https://fonts.google.com/specimen/Barlow+Condensed)
+- <a href="https://getbootstrap.com/" target="_blank">Bootstrap (*v4.4.1*)</a>
+- <a href="https://fonts.google.com/" target="_blank" title="Free fonts from Google">Google Fonts</a>
+  - <a href="https://material.io/resources/icons/?style=round" target="_blank" title="Material Icons (*Rounded*)">Material Icons (*Rounded*)</a>
+  - <a href="https://fonts.google.com/specimen/Roboto" target="_blank" title="Roboto">Roboto</a>
+  - <a href="https://fonts.google.com/specimen/Roboto+Condensed" target="_blank" title="Roboto Condensed">Roboto Condensed</a>
+  - <a href="https://fonts.google.com/specimen/Barlow+Condensed" target="_blank" title="Barlow Condensed">Barlow Condensed</a>
 
 
 ## Changes
-### v0.4beta
+###### v0.4.1beta
+- Updated README.md
+
+
+###### v0.4beta
 - Updated __vendor-dir.scss file to include Bootstrap 4.4.1
 - Updated __vendor-dir.scss file to include Google Fonts
-  - [Material Icons (*Rounded*)](https://material.io/resources/icons/?style=round)
-  - [Roboto](https://fonts.google.com/specimen/Roboto)
-  - [Roboto Condensed](https://fonts.google.com/specimen/Roboto+Condensed)
-  - [Barlow Condensed](https://fonts.google.com/specimen/Barlow+Condensed)
-- Removed Font Awesome (*Sorry, fellas*)
+  - <a href="https://material.io/resources/icons/?style=round" target="_blank" title="Material Icons (*Rounded*)">Material Icons (*Rounded*)</a>
+  - <a href="https://fonts.google.com/specimen/Roboto" target="_blank" title="Roboto">Roboto</a>
+  - <a href="https://fonts.google.com/specimen/Roboto+Condensed" target="_blank" title="Roboto Condensed">Roboto Condensed</a>
+  - <a href="https://fonts.google.com/specimen/Barlow+Condensed" target="_blank" title="Barlow Condensed">Barlow Condensed</a>
+- Removed Font Awesome (*Sorry, folks*)
 - Updated README.md

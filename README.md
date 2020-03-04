@@ -2,7 +2,7 @@
 LC SCSS Starter Pack - *Just a good jumping off point.*
 
 
-## Verion 0.5.3beta 
+## Verion 0.5.4beta 
 Built by [Lake County Board of County Commissioner's Office of Communications](https://lakecountyfl.gov/offices/communications/)
 
 
@@ -45,7 +45,14 @@ $ git push origin master
 
 
 ## Changes
-###### v0.5.3beta
+###### v0.5.4beta <2020-03-04>
+- Included latest version of lc-ngui mixins into abstracts/_mixins.scss
+- Corrected issue with Material Icons not loading
+- Started adding dates to version changes in README.md
+- Revised README.md
+
+
+###### v0.5.3beta <2020-03-03>
 - Removed *some* variables from individual stylesheets for testing purposes.  *Variable are still available to use, but are not used inside this start kit.*  I want to see if Angular compiles before using, or just uses.  I had some issues with the previous version not finding variable.  I am unsure if this is because they didn't exist, or a compiling issue.  This version should tell me which is the case.
 - Added abstracts/_colors.scss
 - Added abstracts/_fonts.scss

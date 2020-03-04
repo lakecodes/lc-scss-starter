@@ -1,3 +1,21 @@
+// ANIMATION DURATION  ---------------------------------------------------------------------------------------------
+@mixin animation-duration($value) {
+  -webkit-animation-duration: $value;
+  animation-duration: $value;
+}
+
+
+
+
+// ANIMATION NAME  ---------------------------------------------------------------------------------------------
+@mixin animation-name($value) {
+  -webkit-animation-name: $value;
+  animation-name: $value;
+}
+
+
+
+
 // BOX DECORATION BREAK  ---------------------------------------------------------------------------------------------
 @mixin box-decoration-break($value) {
   -webkit-box-decoration-break: $value;
@@ -204,6 +222,25 @@
   -webkit-hyphens:$value;
   -ms-hyphens:$value;
   hyphens:$value;
+}
+
+
+
+
+// KEYFRAMES  ----------------------------------------------------------------------------------------------------------
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} {
+    @content; 
+  }
+  @-moz-keyframes #{$name} {
+    @content;
+  }
+  @-ms-keyframes #{$name} {
+    @content;
+  }
+  @keyframes #{$name} {
+    @content;
+  } 
 }
 
 

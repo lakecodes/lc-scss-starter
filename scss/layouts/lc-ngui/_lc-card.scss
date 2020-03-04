@@ -981,7 +981,7 @@
 
 
                     .cards .cards-item .card-details .card-title {
-                        font-family:$barlow-condensed;
+                        font-family:'Barlow Condensed', sans_serif;
                         font-size:2.375rem;
                         line-height:2.25rem;
                         font-weight:600;
@@ -989,7 +989,7 @@
                         .style-2 .cards .cards-item .card-details .card-title {
                             position: relative;
                             left:0;
-                            font-family:$roboto;
+                            font-family:'Roboto', sans_serif;
                             text-transform:uppercase;
                             font-weight:900;
                             @include letter-spacing(0);
@@ -1025,7 +1025,7 @@
                             display:block;
                             // position: relative;
                             // left:0;
-                            font-family:$barlow-condensed;
+                            font-family:'Barlow Condensed', sans_serif;
                             text-transform:none;
                             font-weight:500;
                             @include letter-spacing(10);
@@ -1150,7 +1150,8 @@
 
 
                     .cards .cards-item .card-details .card-subtitle {
-                        color:$grey;
+                        // color:$grey;
+                        color:grey;
                         font-size:.9em;
                         font-style:italic;
                         margin-top:-.75rem;
@@ -1188,7 +1189,8 @@
                     .cards .cards-item .card-details .card-text {
                         font-size:1rem;
                         line-height:1.6875rem;
-                        color:$black;
+                        // color:$black;
+                        color:#333;
                     }
 
 

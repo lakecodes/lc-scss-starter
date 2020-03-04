@@ -14,3 +14,902 @@
 .btn.alt {
   //color: $blue;
 }
+
+
+
+
+
+
+
+
+
+
+/*--  LINK STYLES  ----------------------------------------------------------------*/
+p:not(.sidebar-title) a:not(.button),
+p:not(.sidebar-title) a:not(.button):visited,
+address a:not(.button),
+address a:not(.button):visited,
+a.blank:not(.button),
+a.blank:not(.button):visited {
+    display:inline;
+    word-wrap: normal;
+    color:$link;
+    background:
+        linear-gradient(
+            to bottom, $link 0%,
+            $link 100%
+        );
+    background-position: 0% 100%;
+    background-repeat: repeat-x;
+    background-size: .125rem .0625rem;
+    text-decoration: none;
+    @include transition(all .15s);
+}
+    p:not(.lead).alt a,
+    p:not(.lead).alt a:visited,
+    a.alt,
+    a.alt:visited {
+        display:inline;
+        word-wrap: normal;
+        color:$black;
+        background:
+            linear-gradient(
+                to bottom, $linkBg 0%,
+                $linkBg 100%
+            );
+        background-position: 0% 100%;
+        background-repeat: repeat-x;
+        background-size: .125rem .4rem;
+        text-decoration: none;
+        @include transition(all .15s);
+    }
+    p:not(.lead):not(.sidebar-title) a:not(.button):not(.next-month-link):hover,
+    address a:not(.button):hover,
+    a.blank:not(.button):hover {
+        color:#FFF;
+        background:
+            linear-gradient(
+                to bottom, $link 0%,
+                $link 100%
+            );
+        background-position: 0% 100%;
+        background-repeat: repeat-x;
+        background-size: .125rem 3.125rem;
+    }
+        p:not(.lead).alt a:hover,
+        a:hover.alt {
+            color:$black;
+            background:
+                linear-gradient(
+                    to bottom, $linkBg 0%,
+                    $linkBg 100%
+                );
+            background-position: 0% 100%;
+            background-repeat: repeat-x;
+            background-size: .125rem 3.125rem;
+        }
+    .bg-dark p:not(.lead) a:not(.button),
+    .bg-dark p:not(.lead) a:not(.button):visited,
+    .bg-dark address a:not(.button),
+    .bg-dark address a:not(.button):visited {
+        color: #FFF;
+        display:inline;
+        word-wrap: normal;
+        background:
+            linear-gradient(
+                to bottom, #FFF 0%,
+                #FFF 100%
+            );
+        background-position: 0% 100%;
+        background-repeat: repeat-x;
+        background-size: .125rem .0625rem;
+        text-decoration: none;
+        @include transition(all .15s);
+    }
+        .bg-dark p:not(.lead) a:not(.button):hover,
+        .bg-dark address a:not(.button):hover {
+            color: $black;
+            background:
+                linear-gradient(
+                    to bottom, #FFF 0%,
+                    #FFF 100%
+                );
+            background-position: 0% 100%;
+            background-repeat: repeat-x;
+            background-size: .125rem 3.125rem;
+        }
+p:not(.lead) a:not(.button):after,
+a.blank:not(.button):after {
+    display:inline;
+    position:static;
+    @include transform(scaleX(1));
+    content:'';
+    @include transition(all .15s);
+    font-size:110%;
+    bottom:-.15em;
+}
+
+p:not(.lead) a[target="_blank"]:not(.button):after,
+a.blank:not(.button):after,
+p:not(.lead) a.download:not(.button):after,
+p:not(.lead) a[href*="pdf"]:not(.button):after,
+p:not(.lead) a[href*="doc"]:not(.button):after,
+p:not(.lead) a[href*="docx"]:not(.button):after,
+p:not(.lead) a[href*="xls"]:not(.button):after,
+p:not(.lead) a[href*="xlsx"]:not(.button):after,
+.link-list .more:after,
+p:not(.lead) a[href*="tel:"]:not(.button):after,
+p:not(.lead) a[href*="callto:"]:not(.button):after,
+p:not(.lead) a.phone:not(.button):after,
+p:not(.lead) a[href*="mailto"]:not(.button):after,
+p:not(.lead) a[href*="contact"]:not(.button):after,
+p:not(.lead) a[href*="email"]:not(.button):after,
+p:not(.lead) a.email:not(.button):after {
+    font-family: 'Material Icons Round';
+    font-weight: normal;
+    font-style: normal;
+    display: inline-block;
+    line-height: 0;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: 'liga';
+    position: relative;
+    @include transition(all .15s);
+    @include opacity(.2);
+    padding-left:.25rem;
+}
+    .bg-dark p:not(.lead) a:not(.button):after {
+        @include opacity(.6);
+    }
+    p:not(.lead) a[target="_blank"]:not(.button):hover:after,
+    a.blank:not(.button):hover:after,
+    p:not(.lead) a.download:not(.button):hover:after,
+    p:not(.lead) a[href*="pdf"]:not(.button):hover:after,
+    p:not(.lead) a[href*="doc"]:not(.button):hover:after,
+    p:not(.lead) a[href*="docx"]:not(.button):hover:after,
+    p:not(.lead) a[href*="xls"]:not(.button):hover:after,
+    p:not(.lead) a[href*="xlsx"]:not(.button):hover:after,
+    p:not(.lead) a[href*="tel:"]:not(.button):hover:after,
+    p:not(.lead) a[href*="callto:"]:not(.button):hover:after,
+    p:not(.lead) a.phone:not(.button):hover:after,
+    p:not(.lead) a[href*="mailto"]:not(.button):hover:after,
+    p:not(.lead) a[href*="contact"]:not(.button):hover:after,
+    p:not(.lead) a[href*="email"]:not(.button):hover:after,
+    p:not(.lead) a.email:not(.button):hover:after {
+        @include opacity(.8);
+    }
+p:not(.lead) a[target="_blank"]:not(.button):after,
+a.blank:not(.button):after {
+    content:'open_in_new';
+}
+
+p:not(.lead) a.download:not(.button):after {
+    content:'attachment';
+    top:5px;
+    font-size:150%;
+}
+
+p:not(.lead) a[href*="pdf"]:not(.button):after,
+p:not(.lead) a[href*="doc"]:not(.button):after,
+p:not(.lead) a[href*="docx"]:not(.button):after {
+    content:'description';
+}
+
+p:not(.lead) a[href*="xls"]:not(.button):after,
+p:not(.lead) a[href*="xlsx"]:not(.button):after {
+    content:'view_module';
+    top: 6px;
+    font-size:150%;
+}
+
+p:not(.lead) a[href*="tel:"]:not(.button):after,
+p:not(.lead) a[href*="callto:"]:not(.button):after,
+p:not(.lead) a.phone:after {
+    content:'phonelink_ring';
+}
+
+p:not(.lead) a[href*="mailto"]:not(.button):after,
+p:not(.lead) a[href*="contact"]:not(.button):after,
+p:not(.lead) a[href*="email"]:not(.button):after,
+p:not(.lead) a.email:not(.button):after {
+    content:'email';
+}
+
+
+
+
+
+
+
+
+
+/*--  BUTTONS  --------------------------------------------------------------------*/
+.button:before,
+.button:after {
+    font-family: 'Material Icons Round';
+    font-weight: normal;
+    font-style: normal;
+    display: inline-block;
+    line-height: 0;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: 'liga';
+
+    position: absolute;
+    top:1.25rem;
+    left:.925rem;
+}
+
+
+.button {
+    display: inline-block;
+    position: relative;
+
+    background: $greyLight;
+    color: $black;
+
+    font-family: $roboto;
+    font-size: .875rem;
+    font-weight: 600;
+    line-height: .7rem;
+    text-transform: uppercase;
+
+    padding: .875rem 1.125rem;
+    margin: 0;
+
+    white-space: nowrap;
+}
+    .button small {
+        text-transform: none;
+        position: relative;
+        top: -.0625rem;
+        font-style: italic;
+    }
+
+    .button:hover {
+        padding-left:2.9rem;
+        text-decoration:none;
+    }
+
+    .button:after {
+        content:'arrow_forward';
+        font-size:130%;
+        @include opacity(0);
+        @include transition(all .15s);
+        font-weight:900;
+    }
+        .button.account:after {content:'person';}
+        .button.add:hover {
+            padding-left: 3rem;
+        }
+            .button.add:after {content:'add_box';}
+        .button.attach:hover {
+            padding-left: 3.05rem;
+        }
+            .button.attach:after {content:'attachment';}
+        .button.back:after {content:'arrow_back';}
+        .button.cancel:after {content:'cancel';}
+        .button.check:after {content:'check';}
+        .button[href*=".pdf"]:after,
+        .button[href*=".doc"]:after,
+        .button[href*=".docx"]:after {
+            content:'description';
+        }
+        .button.download:after {content:'arrow_downward';}
+        .button[href*="mailto:"]:after,
+        .button[href*="contact"]:after,
+        .button[href*="email"]:after,
+        .button.email:hover {
+            padding-left: 3.2rem;
+        }
+            .button.email:after {content:'email';}
+        .button[href*=".jpg"]:hover,
+        .button[href*=".png"]:hover,
+        .button[href*=".gif"]:hover,
+        .button[href*=".tif"]:hover,
+        .button[href*=".eps"]:hover,
+        .button[href*=".bmp"]:hover,
+        .button.image:hover {
+            padding-left: 3.2rem;
+        }
+            .button[href*=".jpg"]:after,
+            .button[href*=".png"]:after,
+            .button[href*=".gif"]:after,
+            .button[href*=".tif"]:after,
+            .button[href*=".eps"]:after,
+            .button[href*=".bmp"]:after,
+            .button.image:after {
+                content:'image';
+            }
+        .button.info:hover {
+            padding-left: 3.1rem;
+        }
+            .button.info:after {content:'info';}
+        .button.location:hover {
+            padding-left: 3.1rem;
+        }
+            .button.location:after {content:'place';}
+        .button[href*="tel:"]:after,
+        .button[href*="callto:"]:after,
+        .button.phone:after {
+            content:'phonelink_ring';
+        }
+        .button.remove:hover,
+        .button.subtract:hover {
+            padding-left: 3.15rem;
+        }
+            .button.remove:after,
+            .button.subtract:after {
+                content:'indeterminate_check_box';
+            }
+        .button.search:after {content:'search';}
+        .button.settings:hover {
+            padding-left: 3.1rem;
+        }
+            .button.settings:after {content:'settings';}
+        .button[href*=".xls"]:hover,
+        .button[href*=".xlsx"]:hover {
+            padding-left: 3.1rem;
+        }
+            .button[href*=".xls"]:after,
+            .button[href*=".xlsx"]:after {
+                content:'view_module';
+                top:1.3rem;
+            }
+        .button.thumb_down:after {content:'thumb_down';}
+        .button.thumb_up:after {content:'thumb_up';}
+        .button.warning:hover {
+            padding-left: 3rem;
+        }
+            .button.warning:after {content:'warning';}
+
+
+
+
+        .button.account:after,
+        .button.add:after,
+        .button.attach:after,
+        .button.cancel:after,
+        .button.check:after,
+        .button[href*=".pdf"]:after,
+        .button[href*=".doc"]:after,
+        .button[href*=".docx"]:after,
+        .button.download:after,
+        .button[href*="mailto:"]:after,
+        .button[href*="contact"]:after,
+        .button[href*="email"]:after,,
+        .button.email:after,
+        .button[href*=".jpg"]:after,
+        .button[href*=".png"]:after,
+        .button[href*=".gif"]:after,
+        .button[href*=".tif"]:after,
+        .button[href*=".eps"]:after,
+        .button[href*=".bmp"]:after,
+        .button.image:after,
+        .button.info:after,
+        .button.location:after,
+        .button[href*="tel:"]:after,
+        .button[href*="callto:"]:after,
+        .button.phone:after,
+        .button.remove:after,
+        .button.subtract:after,
+        .button.search:after,
+        .button.settings:after,
+        .button[href*=".xls"]:after,
+        .button[href*=".xlsx"]:after,
+        .button.thumb_down:after,
+        .button.thumb_up:after,
+        .button.warning:after {
+            font-size:180%;
+            font-weight:normal;
+        }
+
+
+            
+        
+
+        .button:hover:after {
+            @include opacity(1);
+            @include transition(all .3s);
+        }
+            .button.download:hover:after {
+                @include animation-name (download);
+                @include animation-duration (.5s);
+                animation-direction: normal;
+                animation-timing-function: ease-in;
+            }
+            .button.settings:hover:after {
+                @include animation-name (rotation);
+                @include animation-duration (4s);
+                animation-direction: normal;
+                animation-timing-function: linear;
+                animation-iteration-count: infinite;
+            }
+            .button[href*="tel:"]:hover:after,
+            .button[href*="callto:"]:hover:after,
+            .button.phone:hover:after,
+            p a[href*="tel:"]:hover:after,
+            p a[href*="callto:"]:hover:after,
+            p a.phone:hover:after {
+                @include animation-name (ringer);
+                @include animation-duration (.75s);
+                animation-delay: .25s;
+                animation-direction: normal;
+                animation-timing-function: ease-in-out;
+                animation-iteration-count: 2;
+            }
+
+
+
+
+
+//  BUTTON COLORS  ---------------------------------
+.button-primary,
+.button-secondary,
+.button-success,
+.button-danger,
+.button-info,
+.button-dark {
+    color:#FFF;
+}
+
+.button-primary {background:$primary;}
+.button-secondary {background:$secondary;}
+.button-success {background:$success;}
+.button-danger {background:$danger;}
+.button-warning {
+    background:$warning;
+    color:$black;
+}
+.button-info {background:$info;}
+.button-dark {background:$dark;}
+.button-link {
+    background:transparent;
+    color:$link;
+}
+    .bg-dark .button-link {
+        background:transparent;
+        color:$blueOnDark;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+//  PILL BUTTONS  -------------------------------------------------
+.button.pill {
+    background:transparent;
+    border:.25rem solid;
+    border-color:$grey;
+    color:$grey;
+    border-radius:2.5rem;
+    padding: .625rem 1.125rem;
+    z-index: 0;
+}
+    .pill:hover {
+        padding-left:3.15rem;
+        color:#FFF;
+        background-color:$grey;
+    }
+    .pill:after {top:.95rem;}
+
+
+    .button.pill.settings:after {
+        top:.95rem;
+        left:.7rem;
+    }
+
+    .button.pill[href*=".xls"]:after,
+    .button.pill[href*=".xlsx"]:after {
+        top:1.03rem;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+//  MINIMAL BUTTONS  ----------------------------------------------
+.button.min {
+    background:transparent;
+    padding:.625rem 4rem .625rem .0625rem;
+    border-bottom:.125rem solid;
+}
+    .bg-dark .min {
+        color:#FFF;
+        border-color:$greyLight;
+    }
+    .button.min:hover {
+        padding-left:2.25rem;
+        padding-right:1.85rem;
+    }
+    .button.min:after {
+        top:1rem;
+        left:.25rem;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+//  PILL & MINIMAL BUTTON COLORS  ---------------------------------
+.pill.button-primary,
+.min.button-primary,
+.bg-dark .min.button-primary {
+    color:$primary;
+    border-color:$primary;
+}
+    .pill.button-primary:hover,
+    .pill.button-primary:before {
+        background-color:$primary;
+    }
+.pill.button-secondary,
+.min.button-secondary,
+.bg-dark .min.button-secondary {
+    color:$secondary;
+    border-color:$secondary;
+}
+    .pill.button-secondary:hover,
+    .pill.button-secondary:before {
+        background-color:$secondary;
+    }
+.pill.button-success,
+.min.button-success,
+.bg-dark .min.button-success {
+    color:$success;
+    border-color:$success;
+}
+    .pill.button-success:hover,
+    .pill.button-success:before {
+        background-color:$success;
+    }
+.pill.button-danger,
+.min.button-danger,
+.bg-dark .min.button-danger {
+    color:$danger;
+    border-color:$danger;
+}
+    .pill.button-danger:hover,
+    .pill.button-danger:before {
+        background-color:$danger;
+    }
+.pill.button-warning,
+.min.button-warning,
+.bg-dark .min.button-warning {
+    color:$black;
+    border-color:$warning;
+}
+    .pill.button-warning:hover,
+    .pill.button-warning:before {
+        background-color:$warning;
+    }
+.pill.button-info,
+.min.button-info,
+.bg-dark .min.button-info {
+    color:$info;
+    border-color:$info;
+}
+    .pill.button-info:hover,
+    .pill.button-info:before {
+        background-color:$info;
+    }
+.pill.button-dark,
+.min.button-dark,
+.bg-dark .min.button-dark {
+    color:$dark;
+    border-color:$dark;
+}
+    .pill.button-dark:hover,
+    .pill.button-dark:before {
+        background-color:$dark;
+    }
+.pill.button-link,
+.min.button-link,
+.bg-dark .min.button-link {
+    color:$link;
+    border-color:$link;
+}
+    .bg-dark .min.button-link {
+        border-color:$blueOnDark;
+    }
+    .pill.button-link:hover,
+    .pill.button-link:before {
+        background-color:$link;
+    }
+.pill.button-primary:hover,
+.pill.button-secondary:hover,
+.pill.button-success:hover,
+.pill.button-danger:hover,
+.pill.button-info:hover,
+.pill.button-dark:hover,
+.pill.button-link:hover,
+.bg-dark .pill,
+.bg-dark .pill.button-primary,
+.bg-dark .pill.button-secondary,
+.bg-dark .pill.button-danger,
+.bg-dark .pill.button-warning,
+.bg-dark .pill.button-dark,
+.bg-dark .pill.button-link,
+.bg-dark .min.button-primary,
+.bg-dark .min.button-secondary,
+.bg-dark .min.button-success,
+.bg-dark .min.button-danger,
+.bg-dark .min.button-warning,
+.bg-dark .min.button-info,
+.bg-dark .min.button-dark,
+.bg-dark .min.button-link {
+    color:#FFF;
+}
+    .bg-dark .pill.button-warning:hover {color:$black;}
+
+
+
+
+
+
+
+
+
+
+
+//  BIG BUTTON  ---------------------------------------------------
+.button.big {
+    background: transparent;
+    color: $gold;
+    border: .1rem solid $gold;
+    text-transform: uppercase;
+    font-family: $barlow-condensed;
+    @include letter-spacing(50);
+    @include border-radius(0);
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 1;
+    padding: .375rem 1.5rem .55rem;
+    max-width:none;
+}
+    .bg-dark .button.big {
+        color:$gold;
+    }
+    .button.big:hover,
+    .bg-dark .button.big:hover,
+    .button.big.alt,
+    .bg-dark .button.big.alt {
+        color:$black;
+        background:$gold;
+        padding: .375rem 1.5rem .55rem;
+    }
+        .big.alt:hover,
+        .bg-dark .big.alt:hover {
+            background:$gold;
+        }
+    .big:before,
+    .big:hover:before {
+        background:transparent;
+    }
+    .big:after {
+        content:'';
+        margin:0;
+    }
+        .big:hover:after {
+            margin:0;
+        }
+
+    .big small {
+        top:-.4375rem;
+        font-size:50%;
+    }
+
+
+
+
+
+
+
+
+
+
+
+//  BUTTON ANIMATIONS  --------------------------------------------
+@include keyframes(download){
+    0% {top:1.25rem;}
+    25% {top:.75rem;}
+    50% {top:1.25rem;}
+    75% {top:.75rem;}
+    100% {top:1.25rem;}
+}
+
+@include keyframes(ringer){
+    0% {transform:rotateZ(0deg);}
+    10% {transform:rotateZ(10deg);}
+    20% {transform:rotateZ(-10deg);}
+    30% {transform:rotateZ(10deg);}
+    40% {transform:rotateZ(-10deg);}
+    50% {transform:rotateZ(0deg);}
+    100% {transform:rotateZ(0deg);}
+}
+
+@include keyframes(rotation){
+    0% {transform:rotateZ(0deg);}
+    100% {transform:rotateZ(360deg);}
+}
+
+@include keyframes(settingsicon)
+    {
+      0%   {transform:rotateZ(0deg); color: $red;}
+      12.5%   {transform:rotateZ(45deg); color: $blueDark;}
+      25%  {transform:rotateZ(90deg); color: $gold;}
+      37.5%  {transform:rotateZ(135eg); color: $blueGrey;}
+      50%  {transform:rotateZ(180deg); color: $success;}
+      62.5%  {transform:rotateZ(225deg); color: $blueMed;}
+      75%  {transform:rotateZ(270deg); color: $grey;}
+      87.5%  {transform:rotateZ(315deg); color: $blue;}
+      100% {transform:rotateZ(360deg); color: $red;}
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//  ADJUSTMENTS FOR PREVIEW PURPOSES ONLY  ---------------------------------
+.demo-buttons .button {margin-bottom:.625rem;}
+    .demo-buttons .button.big {
+        margin-bottom:1.625rem;
+    }
+.contextual,
+.context {
+    background:#fdfdfd;
+    border: .0625rem solid #efefef;
+    @include border-radius(1.25rem);
+    padding: 1.875rem 1.875rem 0 1.875rem;
+    margin-bottom:1.875rem;
+    @include box-shadow(0 .625rem 4.125rem -4.125rem #000);
+    overflow:hidden;
+}
+    .contextual.bg-dark,
+    .context.bg-dark {
+        border-color:transparent;
+    }
+    .contextual h3,
+    .context h3 {
+        margin: -1.875rem -1.875rem 1.875rem -1.875rem;
+        padding: .9375rem 1.875rem;
+        background:$greyLight;
+        color:$black;
+        @include border-radius(0);
+    }
+        .contextual h3 small,
+        .context h3 small {
+            font-style:italic;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//  SIDEBAR LINK LIST  -----------------------------------------------------
+.link-list {
+    list-style: none;
+    margin:0;
+    padding: 0;
+}
+    .link-list li {
+        border-bottom:1px solid #DDD;
+    }
+        .link-list li a, .link-list li a:visited {
+            display:block;
+            padding:.5625rem .6875rem;
+            color:black;
+            font-size:1rem;
+            line-height:1.6875rem;
+            @include letter-spacing(20);
+            position: relative;
+        }
+            .link-list li:hover a,
+            .link-list li a:hover {
+                text-decoration:none;
+            }
+            .link-list li a:after {
+                content:'';
+                display:block;
+                position: absolute;
+                top:0;
+                left:0;
+                bottom:0;
+                width:100%;
+                background:$grey;
+                @include transition(all .2s linear);
+                z-index: -1;
+                @include opacity(0);
+            }
+                .link-list li:hover a:after,
+                .link-list li a:hover:after {
+                    @include opacity(.2);
+                }
+
+    //  MORE HELPFUL LINKS  --
+    .link-list .more {
+        padding:.5625rem .6875rem;
+        border-bottom:none;
+    }
+        .link-list .more a {
+            display:block;
+            padding:unset;
+            line-height:1.6875;
+        }
+            .link-list .more a:hover {
+                text-decoration:underline;
+                padding-left:.125rem;
+            }
+            .link-list .more a:after,
+            .link-list .more:hover a:after {
+                content:"";
+                display:inline-block;
+                position: static;
+                background:transparent;
+                @include opacity(1);
+                width:unset;
+            }
+
+
+
+p.additional-links a, p.additional-links a:visited {
+    margin-left:.6875rem;
+    margin-right:.6875rem;
+}

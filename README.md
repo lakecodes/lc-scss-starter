@@ -2,7 +2,7 @@
 LC SCSS Starter Pack - *Just a good jumping off point.*
 
 
-## Verion 0.5.2beta 
+## Verion 0.5.3beta 
 Built by [Lake County Board of County Commissioner's Office of Communications](https://lakecountyfl.gov/offices/communications/)
 
 
@@ -15,13 +15,50 @@ Built by [Lake County Board of County Commissioner's Office of Communications](h
   - <a href="https://fonts.google.com/specimen/Roboto+Condensed" target="_blank" title="Roboto Condensed">Roboto Condensed</a>
 
 
+## Adding an existing project to GitHub using the command line
+1. Initialize the local directory as a Git repository.
+```
+git init
+```
+2. Add the files in your new local repository. This stages them for the first commit.
+```
+git add .
+# Adds the files in the local repository and stages them for commit. To unstage a file, use 'git reset HEAD YOUR-FILE'.
+```
+3. Commit the files that you've staged in your local repository.
+```
+git commit -m "Commit details"
+# Commits the tracked changes and prepares them to be pushed to a remote repository. To remove this commit and modify the file, use 'git reset --soft HEAD~1' and commit and add the file again.
+```
+4. In the Command prompt, add the URL for the remote repository where your local repository will be pushed.
+```
+$ git remote add origin https://github.com/lakecodes/lc-scss-starter.git
+# Sets the new remote
+$ git remote -v
+# Verifies the new remote URL
+```
+5. Push the changes in your local repository to GitHub.
+```
+$ git push origin master
+# Pushes the changes in your local repository up to the remote repository you specified as the origin
+```
+
+
 ## Changes
+###### v0.5.3beta
+- Removed *some* variables from individual stylesheets for testing purposes.  *Variable are still available to use, but are not used inside this start kit.*  I want to see if Angular compiles before using, or just uses.  I had some issues with the previous version not finding variable.  I am unsure if this is because they didn't exist, or a compiling issue.  This version should tell me which is the case.
+- Added abstracts/_colors.scss
+- Added abstracts/_fonts.scss
+- Included latest version of lc-ngui buttons into components/_buttons.scss
+- Revised README.md
+
+
 ###### v0.5.2beta
 - Revised README.md
 
 
 ###### v0.5beta
-- Added lc-ngui stylesheets for easy deployments into new projects.  *These files are intended for layout/structure only.  Colors are kept to a minimum.*
+- Added lc-ngui stylesheets for easy deployments into new projects.  *These files are intended for layout/structure.  Colors are kept to a minimum.*
   - lc-calendar-widget
   - lc-card
   - lc-content-callout

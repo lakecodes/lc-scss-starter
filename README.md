@@ -2,7 +2,7 @@
 LC SCSS Starter Pack - *Just a good jumping off point.*
 
 
-## Verion 0.5.5beta 
+## Verion 0.5.7beta 
 Built by [Lake County Board of County Commissioner's Office of Communications](https://lakecountyfl.gov/offices/communications/)
 
 

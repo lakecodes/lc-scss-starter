@@ -2,7 +2,7 @@
 LC SCSS Starter Pack - *Just a good jumping off point.*
 
 
-## Verion 0.5.4beta 
+## Verion 0.5.5beta 
 Built by [Lake County Board of County Commissioner's Office of Communications](https://lakecountyfl.gov/offices/communications/)
 
 
@@ -45,6 +45,12 @@ $ git push origin master
 
 
 ## Changes
+###### v0.5.5beta <2020-03-05>
+- Added CSS styles for `.btn-go`
+- Removed CSS styles for YouTube links
+- Revised README.md
+
+
 ###### v0.5.4beta <2020-03-04>
 - Included latest version of lc-ngui mixins into abstracts/_mixins.scss
 - Corrected issue with Material Icons not loading

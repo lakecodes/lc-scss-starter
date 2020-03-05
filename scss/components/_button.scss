@@ -913,3 +913,84 @@ p.additional-links a, p.additional-links a:visited {
     margin-left:.6875rem;
     margin-right:.6875rem;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.btn-go {position:relative; overflow:hidden;}
+    .btn-go:hover {color:transparent;}
+    .btn-go:before {
+        font-family: 'Material Icons Round';
+        font-weight: normal;
+        font-style: normal;
+        font-size: 24px;  /* Preferred icon size */
+        display: inline-block;
+        line-height: 1;
+        text-transform: none;
+        letter-spacing: normal;
+        word-wrap: normal;
+        white-space: nowrap;
+        direction: ltr;
+        /* Support for all WebKit browsers. */
+        -webkit-font-smoothing: antialiased;
+        /* Support for Safari and Chrome. */
+        text-rendering: optimizeLegibility;
+        /* Support for Firefox. */
+        -moz-osx-font-smoothing: grayscale;
+        /* Support for IE. */
+        font-feature-settings: 'liga';
+        content: "arrow_forward";
+        // content: "input";
+        // content: "done";
+        // content: "how_to_reg";
+        // content: "add";
+        // content: "add_box";
+        // content: "forward";
+        // content: "control_point";
+        // content: "thumb_up";
+        // content: "check_box";
+        // content: "email";
+        // content: "person_add";
+        position:absolute;
+        left:-100%;
+        background:transparent;
+        padding:5px;
+        transition:all .1s ease-out;
+    }
+        .btn-go:hover:before {
+            /*background:#E9ECEF;*/
+            color:#495057;
+            left:6px;
+
+        }

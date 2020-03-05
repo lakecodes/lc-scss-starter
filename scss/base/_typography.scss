@@ -33,14 +33,14 @@ a[href^="ftp://"]::after {content:' (FTP)'; font-size:80%;} // FTP site
 
 a[href="http://google.com"] {}  //  link to specific website
 
-a[href*='youtube']::before {  //  YouTube link
-    font-family: "Font Awesome 5 Free";
-    content: "\f03d";
-    margin-left:4px;
-    font-size: 80%;
-    position: relative;
-    top:-1px;
-}
+// a[href*='youtube']::before {  //  YouTube link
+//     font-family: "Font Awesome 5 Free";
+//     content: "\f03d";
+//     margin-left:4px;
+//     font-size: 80%;
+//     position: relative;
+//     top:-1px;
+// }
 
 a[href^="/"], a[href^=".."] {}  // internal relative link
 

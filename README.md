@@ -45,6 +45,11 @@ $ git push origin master
 
 
 ## Changes
+###### v0.5.7beta <2020-03-05>
+- Removed CSS styles for YouTube links
+- Revised README.md
+
+
 ###### v0.5.6beta <2020-03-05>
 - Fixed broken variable
 - Revised README.md
@@ -52,7 +57,6 @@ $ git push origin master
 
 ###### v0.5.5beta <2020-03-05>
 - Added CSS styles for `.btn-go`
-- Removed CSS styles for YouTube links
 - Revised README.md
 
 
@@ -71,11 +75,11 @@ $ git push origin master
 - Revised README.md
 
 
-###### v0.5.2beta
+###### v0.5.2beta <2020-02-28>
 - Revised README.md
 
 
-###### v0.5beta
+###### v0.5beta <2020-02-28>
 - Added lc-ngui stylesheets for easy deployments into new projects.  *These files are intended for layout/structure.  Colors are kept to a minimum.*
   - lc-calendar-widget
   - lc-card
@@ -91,11 +95,11 @@ $ git push origin master
 - Revised README.md
 
 
-###### v0.4.1beta
+###### v0.4.1beta <2020-02-28>
 - Revised README.md
 
 
-###### v0.4beta
+###### v0.4beta <2020-02-28>
 - Added Bootstrap 4.4.1 to __vendor-dir.scss
 - Added Google Fonts __vendor-dir.scss
   - <a href="https://fonts.google.com/specimen/Barlow+Condensed" target="_blank" title="Barlow Condensed">Barlow Condensed</a>

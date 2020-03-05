@@ -45,6 +45,11 @@ $ git push origin master
 
 
 ## Changes
+###### v0.5.6beta <2020-03-05>
+- Fixed broken variable
+- Revised README.md
+
+
 ###### v0.5.5beta <2020-03-05>
 - Added CSS styles for `.btn-go`
 - Removed CSS styles for YouTube links

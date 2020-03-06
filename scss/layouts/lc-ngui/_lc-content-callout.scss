@@ -28,11 +28,7 @@
                     color:#FFF;
                     z-index:2;
                 }
-                    .linkSection ul li a:hover {
-                        // color:$black;
-                        color:#333;
-                        text-decoration:none;
-                    }
+                    .linkSection ul li a:hover {color:$black; text-decoration:none;}
                     .linkSection ul li a:after {
                         position: absolute;
                         content: '';
@@ -86,21 +82,21 @@
 
 //  USE IN DEMO STYLESHEET  -------------------------
 .linkSection h5 {
-    font-family: 'Roboto', sans_serif;
+    font-family: $roboto;
     font-size: 27px;
     line-height: 36px;
     @include letter-spacing(20);
 }
 
 .linkSection ul li a {
-    font-family: 'Roboto', sans_serif;
+    font-family: $roboto;
     font-size: 16px;
     line-height: 16px;
     @include letter-spacing(20);
 }
 
 .btnSection a.button {
-    font-family: 'Barlow Condensed', sans_serif;
+    font-family: $barlow-condensed;
     font-size: 2rem;
     line-height: 1;
     margin-bottom:.5rem;

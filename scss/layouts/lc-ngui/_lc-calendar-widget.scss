@@ -1,3 +1,7 @@
+#month-view {
+    padding-bottom:30px;
+}
+
 #lc-calendar-widget {
     padding-top: 48px;
     padding-bottom:53px;
@@ -5,8 +9,7 @@
 
 
 .month-and-year.h1  {
-
-    padding-left:3%;
+    padding-left:4%;
     font-weight:500;
     line-height:.65;
 }
@@ -154,9 +157,9 @@
 
 
 
-#list-view {
-    padding-left:calc(3% + 15px);
-}
+// #list-view {
+//     padding-left:calc(3% + 15px);
+// }
 
 #list-view h2 {
     // margin-top:9px;
@@ -177,12 +180,11 @@
         padding:7px 0;
     }
 
-#list-view a.btn-readmore,
-#list-view a.btn-readmore:visited {
-    margin: 0;
-    position: absolute;
-    bottom:0px;
-    width:100%;
+#list-view a.button {
+    // margin: 0;
+    // position: absolute;
+    // bottom:0px;
+    min-width:100%;
 }
 
 
@@ -198,6 +200,24 @@
     .month-and-year {
         padding-left:4%;
     }
+    // #list-view {
+    //     padding-left:calc(4% + 15px);
+    // }
+        #list-view a.button {
+            min-width:unset;
+        }
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:576px) {
     #list-view {
         padding-left:calc(4% + 15px);
     }
@@ -213,15 +233,13 @@
 
 
 @media screen and (min-width:768px) {
-    #month-view{
-        border-right-width: 1px;
-        border-right-style: solid;
-        border-right-color:#efefef;
+    .month-and-year.h1 {
+        padding-left:5%;
     }
-    .month-and-year {
-        padding-left:3%;
+    #list-view {padding-left:50px;}
+    .month-navigation {
+        right:36px;
     }
-    #list-view {padding-left:26px;}
 }
 
 
@@ -234,8 +252,17 @@
 
 
 @media screen and (min-width:992px) {
-    .month-and-year {
-        padding-left:4%;
+    #month-view {
+        border-right-width: 1px;
+        border-right-style: solid;
+        border-right-color:#efefef;
+        padding-bottom:unset;
+    }
+    .month-and-year.h1 {
+        padding-left:3.8%;
+    }
+    .month-navigation {
+        right:20px;
     }
     #list-view {padding-left:35px;}
 }
@@ -250,8 +277,11 @@
 
 
 @media screen and (min-width:1200px) {
-    .month-and-year {
-        padding-left:24px;
+    .month-and-year.h1 {
+        padding-left:4.2%;
+    }
+    .month-navigation {
+        right:26px;
     }
     #list-view {
         padding-left:40px;

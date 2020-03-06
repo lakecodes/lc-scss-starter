@@ -27,6 +27,8 @@
 /*--  LINK STYLES  ----------------------------------------------------------------*/
 p:not(.sidebar-title) a:not(.button),
 p:not(.sidebar-title) a:not(.button):visited,
+p.lead a:not(.button),
+p.lead a:not(.button):visited,
 address a:not(.button),
 address a:not(.button):visited,
 a.blank:not(.button),
@@ -64,6 +66,7 @@ a.blank:not(.button):visited {
         @include transition(all .15s);
     }
     p:not(.lead):not(.sidebar-title) a:not(.button):not(.next-month-link):hover,
+    p:not(.sidebar-title) a:not(.button):not(.next-month-link):hover,
     address a:not(.button):hover,
     a.blank:not(.button):hover {
         color:#FFF;
@@ -106,8 +109,9 @@ a.blank:not(.button):visited {
         text-decoration: none;
         @include transition(all .15s);
     }
-        .bg-dark p:not(.lead) a:not(.button):hover,
-        .bg-dark address a:not(.button):hover {
+        .bg-dark p:not(.lead):not(.sidebar-title) a:not(.button):not(.next-month-link):hover,
+        .bg-dark address a:not(.button):hover,
+        .bg-dark a.blank:not(.button):hover {
             color: $black;
             background:
                 linear-gradient(
@@ -499,11 +503,11 @@ p:not(.lead) a.email:not(.button):after {
 //  PILL BUTTONS  -------------------------------------------------
 .button.pill {
     background:transparent;
-    border:.25rem solid;
+    border:.125rem solid;
     border-color:$grey;
     color:$grey;
     border-radius:2.5rem;
-    padding: .625rem 1.125rem;
+    padding: .75rem 1.125rem;
     z-index: 0;
 }
     .pill:hover {
@@ -511,17 +515,19 @@ p:not(.lead) a.email:not(.button):after {
         color:#FFF;
         background-color:$grey;
     }
-    .pill:after {top:.95rem;}
+    .pill:after {top:1.125rem;}
+    
+    .button.pill.warning:after {top:1rem;}
 
 
     .button.pill.settings:after {
-        top:.95rem;
+        top:1.125rem;
         left:.7rem;
     }
 
     .button.pill[href*=".xls"]:after,
     .button.pill[href*=".xlsx"]:after {
-        top:1.03rem;
+        top:1.178rem;
     }
 
 

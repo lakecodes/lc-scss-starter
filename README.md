@@ -2,7 +2,7 @@
 LC SCSS Starter Pack - *Just a good jumping off point.*
 
 
-## Verion 0.5.7beta 
+## Verion 0.5.8beta 
 Built by [Lake County Board of County Commissioner's Office of Communications](https://lakecountyfl.gov/offices/communications/)
 
 
@@ -45,6 +45,13 @@ $ git push origin master
 
 
 ## Changes
+###### v0.5.8beta <2020-03-06>
+- Updated LC-NGUI stylesheets
+- Updated Buttons stylesheet
+- Added `lake-county-adjustments.scss` for easy deployment to new installations
+- Revised README.md
+
+
 ###### v0.5.7beta <2020-03-05>
 - Removed CSS styles for YouTube links
 - Revised README.md

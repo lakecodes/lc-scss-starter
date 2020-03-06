@@ -142,37 +142,37 @@
                     margin-bottom:40px;
                 }
 
-                .style-3 .cards .cards-item:after {
-                    position: absolute;
-                    bottom: 15px;
-                    right: 5px;
-                    font-family: 'Material Icons Round';
-                    font-weight: normal;
-                    font-style: normal;
-                    display: inline-block;
-                    line-height: 0;
-                    text-transform: none;
-                    letter-spacing: normal;
-                    word-wrap: normal;
-                    white-space: nowrap;
-                    direction: ltr;
-                    -webkit-font-smoothing: antialiased;
-                    text-rendering: optimizeLegibility;
-                    -moz-osx-font-smoothing: grayscale;
-                    font-feature-settings: 'liga';
-                    // position: relative;
-                    @include transition(all .1s);
-                    @include opacity(.4);
-                    // padding-left:.25rem;
-                    content:'info';
-                    z-index: 10;
-                    color:#FFF;
-                    font-size:1.5rem;
-                }
-                    .style-3 .cards-item:hover:after {
-                        @include opacity(0);
-                        // @include transition(all .3s);
-                    }
+                // .style-3 .cards .cards-item:after {
+                //     position: absolute;
+                //     bottom: 15px;
+                //     right: 5px;
+                //     font-family: 'Material Icons Round';
+                //     font-weight: normal;
+                //     font-style: normal;
+                //     display: inline-block;
+                //     line-height: 0;
+                //     text-transform: none;
+                //     letter-spacing: normal;
+                //     word-wrap: normal;
+                //     white-space: nowrap;
+                //     direction: ltr;
+                //     -webkit-font-smoothing: antialiased;
+                //     text-rendering: optimizeLegibility;
+                //     -moz-osx-font-smoothing: grayscale;
+                //     font-feature-settings: 'liga';
+                //     // position: relative;
+                //     @include transition(all .1s);
+                //     @include opacity(.4);
+                //     // padding-left:.25rem;
+                //     content:'info';
+                //     z-index: 10;
+                //     color:#FFF;
+                //     font-size:1.5rem;
+                // }
+                //     .style-3 .cards-item:hover:after {
+                //         @include opacity(0);
+                //         // @include transition(all .3s);
+                //     }
         
         @media screen and (min-width:576px) {
             .container-fluid.style-2.two .cards .cards-item {
@@ -279,6 +279,22 @@
             .style-3 .cards-item:nth-of-type(2) {
                 margin-left:30px;
                 margin-right:30px;
+            }
+        }
+
+        @media screen and (min-width:1800px) {
+            .style-3 .cards-item:nth-of-type(1) {
+                margin-left:50px;
+            }
+            .style-3 .cards-item:nth-of-type(2) {
+                margin-left:70px;
+                margin-right:70px;
+            }
+        }
+
+        @media screen and (min-width:2000px) {
+            .style-3 .cards-item:nth-of-type(3) {
+                margin-right:50px;
             }
         }
 
@@ -736,15 +752,15 @@
                         position:absolute;
                         bottom:0;
                         width:100%;
-                        color:#FFF;
+                        color:#efefef;
                         padding:3.5vw 5vw 5vw 5vw;
-                        transform:translateY(100%);
+                        transform:translateY(0);
                         transition:all .1s;
                         // z-index: 2;
                     }
-                        .style-3 .cards-item:hover .card-detail-text {
-                            transform:translateY(1px);
-                        }
+                        // .style-3 .cards-item:hover .card-detail-text {
+                        //     transform:translateY(100%);
+                        // }
                     .container-fluid.style-2 .cards .cards-item .card-details .card-detail-text {
                         padding:15vw 12vw;
                     }
@@ -814,7 +830,7 @@
 
                         .style-3 .card-detail-text {
                             padding:.5rem 1rem 1rem 1rem;
-                            transform:translateY(100%);
+                            // transform:translateY(100%);
                             transition:all .1s;
                             // z-index: 2;
                         }
@@ -981,7 +997,7 @@
 
 
                     .cards .cards-item .card-details .card-title {
-                        font-family:'Barlow Condensed', sans_serif;
+                        font-family:$barlow-condensed;
                         font-size:2.375rem;
                         line-height:2.25rem;
                         font-weight:600;
@@ -989,7 +1005,7 @@
                         .style-2 .cards .cards-item .card-details .card-title {
                             position: relative;
                             left:0;
-                            font-family:'Roboto', sans_serif;
+                            font-family:$roboto;
                             text-transform:uppercase;
                             font-weight:900;
                             @include letter-spacing(0);
@@ -1025,23 +1041,23 @@
                             display:block;
                             // position: relative;
                             // left:0;
-                            font-family:'Barlow Condensed', sans_serif;
+                            font-family:$barlow-condensed;
                             text-transform:none;
                             font-weight:500;
                             @include letter-spacing(10);
                             margin-bottom:unset;
                             padding-bottom:unset;
-                            font-size:2.375rem;
-                            line-height:2.375rem;
-                            @include opacity(0);
-                            transform:translateY(75px);
+                            font-size:2rem;
+                            line-height:2.875rem;
+                            @include opacity(1);
+                            // transform:translateY(75px);
                             @include transition(all .1s);
                         }
-                            .style-3 .cards-item:hover .card-title {
-                                @include opacity(1);
-                                transform:translateY(0px);
-                                transition-delay: .1s;
-                            }
+                            // .style-3 .cards-item:hover .card-title {
+                            //     @include opacity(0);
+                            //     transform:translateY(0px);
+                            //     transition-delay: .1s;
+                            // }
 
                         .container-fluid.style-2.four .cards .cards-item .card-details .card-title {
                             font-size:9vw;
@@ -1067,8 +1083,8 @@
                             line-height:4vw;
                         }
                         .style-3 .card-title {
-                            font-size:1.5rem;
-                            line-height:1.5rem;
+                            font-size:1.05rem;
+                            line-height:1rem;
                         }
                     }
                     @media screen and (min-width:768px) {
@@ -1080,6 +1096,10 @@
                         .container-fluid.style-2.two .cards .cards-item .card-details .card-title {
                             font-size:2rem;
                             line-height:1.75rem;
+                        }
+                        .style-3 .card-title {
+                            font-size:1.4rem;
+                            line-height:1.5rem;
                         }
                     }
                     @media screen and (min-width:992px) {
@@ -1104,6 +1124,10 @@
                             font-size:2vw;
                             line-height:1.75vw;
                         }
+                        .style-3 .card-title {
+                            font-size:1.05rem;
+                            line-height:1rem;
+                        }
                     }
                     @media screen and (min-width:1200px) {
                         .style-2.three .cards .cards-item .card-details .card-title {
@@ -1118,11 +1142,19 @@
                             font-size:3.2vw;
                             line-height:3vw;
                         }
+                        .style-3 .card-title {
+                            font-size:1.3rem;
+                            line-height:1.5rem;
+                        }
                     }
                     @media screen and (min-width:1400px) {
                         .container-fluid.style-2.three .cards .cards-item .card-details .card-title {
                             font-size:2.8vw;
                             line-height:2.6vw;
+                        }
+                        .style-3 .card-title {
+                            font-size:1.6rem;
+                            line-height:1.7rem;
                         }
                     }
                     @media screen and (min-width:1600px) {
@@ -1131,8 +1163,8 @@
                             line-height:2.2vw;
                         }
                         .style-3 .card-title {
-                            font-size:2.375rem;
-                            line-height:2.375rem;
+                            font-size:1.5rem;
+                            line-height:1.125;
                         }
                     }
                     @media screen and (min-width:1800px) {
@@ -1140,18 +1172,35 @@
                             font-size:2.2vw;
                             line-height:2vw;
                         }
+                        .style-3 .card-title {
+                            font-size:1.5rem;
+                        }
+                    }
+                    @media screen and (min-width:1920px) {
+                        .style-3 .card-title {
+                            font-size:1.675rem;
+                        }
+                    }
+                    @media screen and (min-width:2200px) {
+                        .style-3 .card-title {
+                            font-size:1.98rem;
+                        }
                     }
                     @media screen and (min-width:2400px) {
                         .container-fluid.style-2.three .cards .cards-item .card-details .card-title {
                             font-size:1.8vw;
                             line-height:1.6vw;
                         }
+                        @media screen and (min-width:2400px) {
+                            .style-3 .card-title {
+                                font-size:2rem;
+                            }
+                        }
                     }
 
 
                     .cards .cards-item .card-details .card-subtitle {
-                        // color:$grey;
-                        color:grey;
+                        color:$grey;
                         font-size:.9em;
                         font-style:italic;
                         margin-top:-.75rem;
@@ -1159,15 +1208,16 @@
                     }
                         .style-3 .card-subtitle {
                             display:block;
-                            transform: translateY(30px);
-                            @include opacity(0);
+                            transform: translateY(0);
+                            @include opacity(.5);
                             transition:all .1s;
+                            font-size:.875rem;
                         }
-                            .style-3 .cards-item:hover .card-subtitle {
-                                transform: translateY(0px);
-                                @include opacity(1);
-                                transition-delay:.2s;
-                            }
+                            // .style-3 .cards-item:hover .card-subtitle {
+                            //     transform: translateY(30px);
+                            //     @include opacity(0);
+                            //     transition-delay:.2s;
+                            // }
 
                         @media screen and (min-width:576px) {
                             .style-3 .card-subtitle {
@@ -1189,8 +1239,7 @@
                     .cards .cards-item .card-details .card-text {
                         font-size:1rem;
                         line-height:1.6875rem;
-                        // color:$black;
-                        color:#333;
+                        color:$black;
                     }
 
 

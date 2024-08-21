@@ -2,12 +2,12 @@
 LC SCSS Starter Pack - *Just a good jumping off point.*
 
 
-## Verion 0.5.8beta 
+## Verion 0.5.9beta 
 Built by [Lake County Board of County Commissioner's Office of Communications](https://lakecountyfl.gov/offices/communications/)
 
 
 ## Outside Vendors:
-- <a href="https://getbootstrap.com/" target="_blank">Bootstrap (*v4.4.1*)</a>
+- <a href="https://getbootstrap.com/" target="_blank">Bootstrap (*v5.3.3*)</a>
 - <a href="https://fonts.google.com/" target="_blank" title="Free fonts from Google">Google Fonts</a>
   - <a href="https://fonts.google.com/specimen/Barlow+Condensed" target="_blank" title="Barlow Condensed">Barlow Condensed</a>
   - <a href="https://material.io/resources/icons/?style=round" target="_blank" title="Material Icons (*Rounded*)">Material Icons (*Rounded*)</a>
@@ -45,6 +45,11 @@ $ git push origin master
 
 
 ## Changes
+###### v0.5.9beta <2024-08-21>
+- Updated Bootstrap version
+- Revised README.md
+
+
 ###### v0.5.8beta <2020-03-06>
 - Updated LC-NGUI stylesheets
 - Updated Buttons stylesheet
